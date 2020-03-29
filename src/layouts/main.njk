@@ -22,20 +22,20 @@
                     name="twitter:creator"
                     content={{global.twitterHandle}}
                 />
-                <meta property="og:url" content={{url}} />
+                <meta property="og:url" content="{{global.siteURL}}{{page.url}}" />
                 <meta
                     property="og:title"
-                    content="{{data.number}}: {{data.title}}"
+                    content="{{number}}: {{title}}"
                 />
                 <meta
                     property="og:description"
-                    content={{data.summary}}
+                    content="{{summary}}"
                 />
                 <meta
                     name="twitter:image"
-                    content="{{global.siteURL}}images/aqoc_cover.jpg"
+                    content="{{global.siteURL}}/images/aqoc_cover.jpg"
                 />
-                <meta property="og:image" content="{{global.siteURL}}images/aqoc_cover.jpg" />
+                <meta property="og:image" content="{{global.siteURL}}/images/aqoc_cover.jpg" />
             {% endif %}
         {% endfor %}
 
