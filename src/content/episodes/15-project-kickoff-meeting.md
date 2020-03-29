@@ -16,4 +16,4 @@ Ed and Tom kick off their new side hustle - as chosen by their rabid fanbase. Th
 * [Postman App]([https://www.notion.so/](https://www.getpostman.com/))
 * Our Notion board:
 
-![Screenshot of our project board in the Notion app](notion-board.png)
+![Screenshot of our project board in the Notion app](/images/episodes/15_notion-board.png)
