@@ -32,9 +32,8 @@ layout: main.njk
         <h3 class="sharing__title">Listen wherever you like:</h3>
         <ul class="sharing__links">
             <li class="sharing__link">
-                {# TODO: make dynamic #}
                 <a
-                    href="https://feeds.transistor.fm/a-question-of-code"
+                    href={{global.rssFeed}}
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -42,9 +41,8 @@ layout: main.njk
                 </a>
             </li>
             <li class="sharing__link">
-                {# TODO: make dynamic #}
                 <a
-                    href="https://itunes.apple.com/gb/podcast/a-question-of-code/id1448750157"
+                    href={{global.itunes}}
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -52,9 +50,8 @@ layout: main.njk
                 </a>
             </li>
             <li class="sharing__link">
-                {# TODO: make dynamic #}
                 <a
-                    href="https://overcast.fm/itunes1448750157/a-question-of-code"
+                    href={{global.overcast}}
                     target="_blank"
                     rel="noopener noreferrer"
                 >

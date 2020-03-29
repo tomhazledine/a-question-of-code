@@ -19,9 +19,8 @@
     
     <ul class="header__list">
         <li class="header__link">
-            {# TODO: make dynamic #}
             <a
-                href="https://feeds.transistor.fm/a-question-of-code"
+                href={{global.rssFeed}}
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -37,7 +36,7 @@
             </a>
         </li>
         <li class="header__link">
-            <a href="mailto:aquestionofcode@gmail.com">Contact</a>
+            <a href="mailto:{{global.contactEmail}}">Contact</a>
         </li>
         <li class="header__link">
             <a href="/archive">

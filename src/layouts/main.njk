@@ -10,9 +10,34 @@
         {% endif %}
 
         <link rel="profile" href="//gmpg.org/xfn/11">
-        <title>{% if title and title != "Home" %}{{title}} | {% endif %}Tom Hazledine</title>
+        <title>{% if title and title != "Home" %}{{title}} | {% endif %}{{global.siteTitle}}</title>
         <link rel="shortcut icon" href="/images/favicon.png">
         <link rel="shortcut icon" href="/images/favicon.ico">
+
+
+        {% for tag in tags %}
+            {% if tag === 'episode' %}
+                <meta name="twitter:card" content="summary" />
+                <meta
+                    name="twitter:creator"
+                    content={{global.twitterHandle}}
+                />
+                <meta property="og:url" content={{url}} />
+                <meta
+                    property="og:title"
+                    content="{{data.number}}: {{data.title}}"
+                />
+                <meta
+                    property="og:description"
+                    content={{data.summary}}
+                />
+                <meta
+                    name="twitter:image"
+                    content="{{global.siteURL}}images/aqoc_cover.jpg"
+                />
+                <meta property="og:image" content="{{global.siteURL}}images/aqoc_cover.jpg" />
+            {% endif %}
+        {% endfor %}
 
         {% if custom_css %}
             <style type="text/css">{{custom_css | safe}}</style>
