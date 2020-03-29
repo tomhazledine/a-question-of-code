@@ -10,9 +10,31 @@
         {% endif %}
 
         <link rel="profile" href="//gmpg.org/xfn/11">
-        <title>{% if title and title != "Home" %}{{title}} | {% endif %}A Question of Code</title>
+        <title>{% if title and title != "Home" %}{{title}} | {% endif %}{{global.siteTitle}}</title>
         <link rel="shortcut icon" href="/images/favicon.png">
         <link rel="shortcut icon" href="/images/favicon.ico">
+
+        {# <Helmet>
+    <meta name="twitter:card" content="summary" />
+    <meta
+        name="twitter:creator"
+        content={data.site.siteMetadata.twitter}
+    />
+    <meta property="og:url" content={location.href} />
+    <meta
+        property="og:title"
+        content={`#${post.frontmatter.number}: ${post.frontmatter.title}`}
+    />
+    <meta
+        property="og:description"
+        content={post.frontmatter.summary}
+    />
+    <meta
+        name="twitter:image"
+        content={`${data.site.siteMetadata.siteURL}${Logo}`}
+    />
+    <meta property="og:image" content={Logo} />
+</Helmet> #}
 
         {% if custom_css %}
             <style type="text/css">{{custom_css | safe}}</style>

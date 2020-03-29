@@ -27,7 +27,8 @@ module.exports = eleventyConfig => {
             input: "src/content/",
             output: "build",
             includes: "../includes/",
-            layouts: "../layouts/"
+            layouts: "../layouts/",
+            data: "../data/"
         }
     };
 };
