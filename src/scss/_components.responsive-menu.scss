@@ -1,0 +1,46 @@
+.collapsible-menu__toggle {
+    @extend %buttonReset;
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    @include bp(d2) {
+        display: block;
+    }
+}
+
+.collapsible-menu__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: $black;
+    transition: fill 0.2s;
+}
+
+.collapsible-menu__toggle:focus {
+    outline: none;
+    .collapsible-menu__icon {
+        fill: $orange;
+    }
+}
+
+.collapsible-menu {
+    @include bp(d2) {
+        // position: absolute;
+        // top: 0;
+        // right: 0;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        text-align: right;
+        padding-top: 4rem;
+    }
+    &.open {
+        height: auto;
+    }
+}
+
+.collapsible-menu__toggle:focus .collapsible-menu__icon,
+.collapsible-menu__toggle:hover .collapsible-menu__icon {
+    fill: $black;
+}

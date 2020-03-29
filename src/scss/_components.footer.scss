@@ -6,6 +6,9 @@
     padding: 1em;
     display: flex;
     justify-content: center;
+    @include bp(d2) {
+        flex-wrap: wrap;
+    }
 }
 
 .footer__link {

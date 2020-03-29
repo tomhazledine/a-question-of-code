@@ -16,32 +16,39 @@
         </svg>
         <h3 class="header__home-text">aQoC</h3>
     </a>
+
+    <button class="collapsible-menu__toggle js__menu-toggle">
+      <span class="visuallyhidden">Menu</span>
+      <svg class="collapsible-menu__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M1 4h2v2H1V4zm4 0h14v2H5V4zM1 9h2v2H1V9zm4 0h14v2H5V9zm-4 5h2v2H1v-2zm4 0h14v2H5v-2z"/></svg>
+    </button>
+    <div class="collapsible-menu js__menu-wrapper">
     
-    <ul class="header__list">
-        <li class="header__link">
-            <a
-                href={{global.rssFeed}}
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                RSS
-            </a>
-        </li>
-        <li class="header__link header__link--optional">
-            <a href="/">Home</a>
-        </li>
-        <li class="header__link">
-            <a href="/about">
-                About<span class="hide-on-mobile"> Us</span>
-            </a>
-        </li>
-        <li class="header__link">
-            <a href="mailto:{{global.contactEmail}}">Contact</a>
-        </li>
-        <li class="header__link">
-            <a href="/archive">
-                <span class="hide-on-mobile">All </span>Shows
-            </a>
-        </li>
-    </ul>
+        <ul class="header__list">
+            <li class="header__link">
+                <a
+                    href={{global.rssFeed}}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    RSS
+                </a>
+            </li>
+            <li class="header__link">
+                <a href="/">Home</a>
+            </li>
+            <li class="header__link">
+                <a href="/about">
+                    About Us
+                </a>
+            </li>
+            <li class="header__link">
+                <a href="mailto:{{global.contactEmail}}">Contact</a>
+            </li>
+            <li class="header__link">
+                <a href="/archive">
+                    All Shows
+                </a>
+            </li>
+        </ul>
+    </div>
 </header>
