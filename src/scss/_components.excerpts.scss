@@ -5,6 +5,14 @@
     border-left: 0.4rem solid $black;
 }
 
+.excerpt__title {
+    font-weight: bold;
+}
+
+.excerpt__subtitle {
+    font-style: italic;
+}
+
 .excerpt__title-number {
     font-size: 2rem;
 }

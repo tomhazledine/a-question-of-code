@@ -2,7 +2,7 @@ const moment = require("moment");
 
 module.exports = eleventyConfig => {
     eleventyConfig.addNunjucksFilter("date", date =>
-        moment(date, "YYYY-MM-DD").format("MMM Y")
+        moment(date, "YYYY-MM-DD").format("Do MMM, Y")
     );
 
     eleventyConfig.addNunjucksFilter("datefull", date =>

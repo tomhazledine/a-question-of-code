@@ -1,14 +1,16 @@
 ---
-layout: articles.njk
-title: Archive
+layout: archive.njk
+title: "All episodes:"
 description: "I use this site as a lab when I want to grok a new technique. With no clients to interfere with my code, I can experiment as much as I like. I document my progress to cement things I’ve learned in my mind, but also hope it may help other developers."
 ---
-{% for article in collections.articles | reverse %}
-    <article class="snippet">
-        <code class="snippet__date">{{ article.data.date | date }}</code>
-        <a class="snippet__link" href={{ article.url }} rel="bookmark">{{ article.data.title }}</a>
-        {% for cat in article.data.categories %}
-            <span class="snippet__category"> - {{ cat }}</span>
-        {% endfor %}
-    </article>
+
+{% for episode in collections.episode | reverse %}
+    <a href={{episode.url}} class="excerpt">
+        <h2 class="excerpt__title">
+            {{episode.data.number}}: {{ episode.data.title }}
+        </h2>
+        <span class="excerpt__subtitle">
+            — {{ episode.data.date | date }}
+        </span>
+    </a>
 {% endfor %}
