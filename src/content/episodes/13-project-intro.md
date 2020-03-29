@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "Project Introduction"
 number: "13"
 date: "2019-03-18"

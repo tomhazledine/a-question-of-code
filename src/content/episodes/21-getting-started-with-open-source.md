@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "How do you get started with open source?"
 number: "21"
 date: "2019-05-13"

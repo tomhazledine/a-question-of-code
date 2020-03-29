@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "If it's not broken, should you fix it?"
 number: "38"
 date: "2019-11-18"

@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "Should you pivot?"
 number: "31"
 date: "2019-08-26"

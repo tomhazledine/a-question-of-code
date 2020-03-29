@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "What is a Minimum Viable Product?"
 number: "51"
 date: "2020-02-24"

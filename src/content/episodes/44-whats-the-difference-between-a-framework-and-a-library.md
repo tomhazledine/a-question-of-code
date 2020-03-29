@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "What is the difference between a framework and a library?"
 number: "44"
 date: "2020-01-06"

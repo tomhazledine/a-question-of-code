@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "When should you quit your job?"
 number: "08"
 date: "2019-02-11"

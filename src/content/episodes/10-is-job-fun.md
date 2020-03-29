@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "Is coding less fun when it's your job?"
 number: "10"
 date: "2019-02-25"

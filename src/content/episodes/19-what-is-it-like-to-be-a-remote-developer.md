@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "What is it like to be a remote developer?"
 number: "19"
 date: "2019-04-29"

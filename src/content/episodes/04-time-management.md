@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "How do you manage your time?"
 number: "04"
 date: "2019-01-14"

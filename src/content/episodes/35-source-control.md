@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "Do you git it? (What is version control?)"
 number: "35"
 date: "2019-09-23"

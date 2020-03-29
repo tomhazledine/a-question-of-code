@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "Yearly Themes: 2020"
 number: "43"
 date: "2019-12-23"

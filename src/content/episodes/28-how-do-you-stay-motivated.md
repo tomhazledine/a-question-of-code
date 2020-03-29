@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "How do you stay motivated?"
 number: "28"
 date: "2019-07-15"

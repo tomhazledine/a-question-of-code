@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "How do you prepare for a new job?"
 number: "32"
 date: "2019-09-02"

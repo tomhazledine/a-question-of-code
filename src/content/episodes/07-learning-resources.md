@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "Where do you learn?"
 number: "07"
 date: "2019-02-04"

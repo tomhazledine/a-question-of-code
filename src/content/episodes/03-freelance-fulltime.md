@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "Freelance or full-time?"
 number: "03"
 date: "2019-01-03"

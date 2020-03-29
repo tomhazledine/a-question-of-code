@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "How do you build a blog?"
 number: "47"
 date: "2020-01-27"

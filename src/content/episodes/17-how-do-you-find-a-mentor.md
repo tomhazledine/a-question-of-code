@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "How do you find a mentor?"
 number: "17"
 date: "2019-04-15"

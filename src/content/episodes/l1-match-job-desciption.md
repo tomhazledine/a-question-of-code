@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "How closely should you match a job description before applying?"
 number: "⚡️1"
 date: "2019-05-20"

@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "How do you apply to speak at a conference? (with Tony Edwards)"
 number: "46"
 date: "2020-01-20"

@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "How do you write a good CV?"
 number: "23"
 date: "2019-06-10"

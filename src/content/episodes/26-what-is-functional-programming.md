@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "What is functional programming?"
 number: "26"
 date: "2019-07-01"

@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "How much time do you spending coding in a coding job?"
 number: "⚡️5"
 date: "2019-08-19"

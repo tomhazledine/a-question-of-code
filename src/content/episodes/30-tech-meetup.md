@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "What do you get from going to a tech meetup?"
 number: "30"
 date: "2019-07-29"

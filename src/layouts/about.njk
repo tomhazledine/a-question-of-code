@@ -5,33 +5,7 @@ layout: main.njk
 <div class="wrapper">
     <h1 class="title--page">{{title}}</h1>
 
-    <div class="headshots">
-        
-        <div class="headshot">
-            <div
-                class="headshot__photo"
-                style="background-image: url('/images/headshot_ed_bw.jpg')"
-            ></div>
-            <a
-                href="https://twitter.com/ed_the_coder"
-                class="headshot__link"
-            >
-                @ed_the_coder
-            </a>
-        </div>
-        <div class="headshot">
-            <div
-                class="headshot__photo"
-                style="background-image: url('/images/headshot_tom_bw.jpg')"
-            ></div>
-            <a
-                href="https://twitter.com/thomashazledine"
-                class="headshot__link"
-            >
-                @thomashazledine
-            </a>
-        </div>
-    </div>
+    {% include "headshots.njk" %}
 
     {{ content | safe }}
 

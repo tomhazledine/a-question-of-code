@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "How do you learn a new programming language?"
 number: "34"
 date: "2019-09-15"

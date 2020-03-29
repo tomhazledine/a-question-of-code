@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "Why should you write tests?"
 number: "22"
 date: "2019-06-03"

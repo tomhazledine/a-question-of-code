@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "How long does it take to get a job in tech?"
 number: "41"
 date: "2019-12-09"

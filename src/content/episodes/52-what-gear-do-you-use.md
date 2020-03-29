@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "What gear do you use?"
 number: "52"
 date: "2020-03-02"

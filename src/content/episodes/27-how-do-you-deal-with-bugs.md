@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "How do you deal with crazy bugs?"
 number: "27"
 date: "2019-07-08"

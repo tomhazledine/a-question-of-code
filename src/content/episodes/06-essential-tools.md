@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "What tools do you need?"
 number: "06"
 date: "2019-01-28"

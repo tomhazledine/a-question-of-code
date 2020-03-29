@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "Frontend or Backend?"
 number: "02"
 date: "2018-12-31"

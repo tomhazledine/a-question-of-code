@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "How long should you spend on a take home coding challenge?"
 number: "⚡️4"
 date: "2019-08-12"

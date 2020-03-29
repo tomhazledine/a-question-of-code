@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "Do you have imposter syndrome?"
 number: "39"
 date: "2019-11-25"

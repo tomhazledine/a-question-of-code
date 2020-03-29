@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "Can you trust recruiters?"
 number: "40"
 date: "2019-12-02"

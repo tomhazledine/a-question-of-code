@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "What is it like to attend a tech conference?"
 number: "20"
 date: "2019-05-06"

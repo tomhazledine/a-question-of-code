@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "What does it mean to be a full stack developer?"
 number: "⚡️2"
 date: "2019-05-27"

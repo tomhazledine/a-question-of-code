@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "What is the interview process for a tech job?"
 number: "18"
 date: "2019-04-22"

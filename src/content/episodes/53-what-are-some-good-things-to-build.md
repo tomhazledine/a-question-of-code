@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "What are some good things to build?"
 number: "53"
 date: "2020-03-09"

@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "What's wrong with developer culture?"
 number: "29"
 date: "2019-07-22"

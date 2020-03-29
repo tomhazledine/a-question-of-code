@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "What's so special about the command line?"
 number: "50"
 date: "2020-02-17"

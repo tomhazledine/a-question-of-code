@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "Should you get a CS degree?"
 number: "12"
 date: "2019-03-11"

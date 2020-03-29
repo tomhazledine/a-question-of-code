@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "Should you take a bootcamp?"
 number: "45"
 date: "2020-01-13"

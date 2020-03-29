@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "Any tips and tricks for effective home working?"
 number: "55"
 date: "2020-03-23"

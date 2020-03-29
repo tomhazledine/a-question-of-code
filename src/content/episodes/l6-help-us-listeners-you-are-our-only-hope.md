@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "Help us, listeners. You're our only hope"
 number: "⚡️6"
 date: "2019-10-14"

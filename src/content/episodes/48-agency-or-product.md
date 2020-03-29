@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "Agency or product?"
 number: "48"
 date: "2020-02-03"

@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "Should you write about what you’ve learnt?"
 number: "24"
 date: "2019-06-17"

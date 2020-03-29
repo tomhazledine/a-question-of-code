@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "Which language should you learn first?"
 number: "05"
 date: "2019-01-21"

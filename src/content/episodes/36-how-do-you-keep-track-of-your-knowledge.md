@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "How do you keep track of your knowledge?"
 number: "36"
 date: "2019-09-30"

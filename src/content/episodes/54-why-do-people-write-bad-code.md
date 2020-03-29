@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "Why do people write 'bad' code?"
 number: "54"
 date: "2020-03-16"

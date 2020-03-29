@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "Why are you learning to code?"
 number: "01"
 date: "2018-12-24"

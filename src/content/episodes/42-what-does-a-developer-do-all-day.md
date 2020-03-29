@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "What does a developer do all day?"
 number: "42"
 date: "2019-12-16"

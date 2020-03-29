@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "What happens in a kickoff meeting?"
 number: "15"
 date: "2019-04-01"

@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "Do you need to be good at maths to become a programmer?"
 number: "25"
 date: "2019-06-24"

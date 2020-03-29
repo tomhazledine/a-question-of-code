@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "When are you ready for a coding job?"
 number: "37"
 date: "2019-10-07"

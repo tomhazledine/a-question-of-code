@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "How much tooling to too much tooling?"
 number: "33"
 date: "2019-09-09"

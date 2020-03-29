@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "Where do you find jobs?"
 number: "09"
 date: "2019-02-18"

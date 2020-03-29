@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "What is a build pipeline?"
 number: "49"
 date: "2020-02-10"

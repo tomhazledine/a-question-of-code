@@ -1,4 +1,5 @@
 ---
+layout: "episode.njk"
 title: "When should you specialise?"
 number: "16"
 date: "2019-04-08"
