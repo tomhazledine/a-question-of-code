@@ -1,5 +1,6 @@
 import "../scss/main.scss";
 
+import "./modules/responsive-menu";
 // import "./modules/analytics";
 // import { setNewsletterCookie } from "./modules/cookies";
 // import { convert_footnotes_to_sidenotes } from "./modules/sidenotes";
