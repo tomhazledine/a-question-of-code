@@ -6,5 +6,6 @@ menuToggle.addEventListener("click", toggleMenu, true);
 
 function toggleMenu(e) {
     e.preventDefault();
+    menuToggle.classList.toggle("open");
     menuWrapper.classList.toggle("open");
 }
