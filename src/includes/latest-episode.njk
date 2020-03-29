@@ -1,0 +1,30 @@
+<div class="block--featured">
+    <h3 class="heading--label">Latest episode:</h3>
+    
+    {% for episode in collections.episode | reverse %}
+        {% if loop.first %}
+            <a href={{episode.url}}
+                class="excerpt excerpt--featured"
+            >
+                <div class="excerpt__title">
+                    <span class="excerpt__title-number">
+                        {{episode.data.number}}
+                    </span>
+                    <span class="exerpt__title-body">
+                        {{ episode.data.title }}
+                    </span>
+                </div>
+                <span
+                    class="excerpt__subtitle excerpt__date"
+                >
+                    — {{ episode.data.date | date }}
+                </span>
+                <p class="excerpt--featured__summary">
+                    {{episode.data.summary}}
+                </p>
+            </a>
+        {% endif %}
+    {% endfor %}
+
+
+</div>
