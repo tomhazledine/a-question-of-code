@@ -1,0 +1,19 @@
+<div class="block--regular">
+    
+    <h3 class="heading--label">Popular episodes:</h3>
+
+
+    {% for episode in collections.featured | reverse %}
+        <a href={{episode.url}} class="excerpt">
+            <h2 class="excerpt__title">
+                {{episode.data.number}}: {{ episode.data.title }}
+            </h2>
+            <span class="excerpt__subtitle">
+                — {{ episode.data.date | date }}
+            </span>
+        </a>
+    {% endfor %}
+    
+    <a class="block__cta" href="/archive">All episodes...</a>
+
+</div>

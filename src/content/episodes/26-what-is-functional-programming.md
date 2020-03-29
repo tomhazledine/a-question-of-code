@@ -3,7 +3,7 @@ layout: "episode.njk"
 title: "What is functional programming?"
 number: "26"
 date: "2019-07-01"
-tags: ["episode"]
+tags: [episode, featured]
 audio: "https://media.transistor.fm/ea56d4ae.mp3"
 featured: true
 summary: "An FP convert tries to explain his obsession to a skeptical newbie coder."

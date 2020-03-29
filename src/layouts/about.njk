@@ -2,11 +2,8 @@
 layout: main.njk
 ---
 
-<div class="wrapper">
-    <h1 class="title--page">{{title}}</h1>
+<h1 class="title--page">{{title}}</h1>
 
-    {% include "headshots.njk" %}
+{% include "headshots.njk" %}
 
-    {{ content | safe }}
-
-</div>
+{{ content | safe }}

@@ -3,7 +3,7 @@ layout: "episode.njk"
 title: "What are some good things to build?"
 number: "53"
 date: "2020-03-09"
-tags: ["episode"]
+tags: [episode, featured]
 audio: "https://media.transistor.fm/6a18c366.mp3"
 featured: true
 summary: "If the best way to learn is by doing, what should you actually do?"

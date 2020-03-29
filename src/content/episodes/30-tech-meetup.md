@@ -4,7 +4,7 @@ title: "What do you get from going to a tech meetup?"
 number: "30"
 date: "2019-07-29"
 featured: true
-tags: ["episode"]
+tags: [episode, featured]
 audio: "https://media.transistor.fm/b4311a81.mp3"
 summary: "Networking can be gross, but meetups can be fun for everybody."
 ---

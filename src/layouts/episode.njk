@@ -24,14 +24,14 @@ layout: main.njk
     <meta property="og:image" content={Logo} />
 </Helmet> #}
 
-<div class="wrapper">
-    <div class="post__header">
-        <h1 class="title--page">{{title}}</h1>
-        <span class="excerpt__subtitle">
-            <time datetime="{{date | datefull }}" itemprop="datePublished">{{date | date}}</time>
-        </span>
-    </div>
-    <div class="post__content">
+
+<div class="post__header">
+    <h1 class="title--page">{{title}}</h1>
+    <span class="excerpt__subtitle">
+        <time datetime="{{date | datefull }}" itemprop="datePublished">{{date | date}}</time>
+    </span>
+</div>
+<div class="post__content">
 
         {# <span class="visuallyhidden">Published on </span>
         <time datetime="{{date | datefull }}" itemprop="datePublished">{{date | date}}</time>
@@ -49,15 +49,15 @@ layout: main.njk
             </div>
         </span> #}
         
-        {{ content | safe }}
-        
-        <audio class="post__player" controls src={{audio}}>
-            Your browser does not support the
-            <code>audio</code> element.
-        </audio>
-        
-        <h2>Get in touch</h2>
-        {% include "headshots.njk" %}
+    {{ content | safe }}
+    
+    <audio class="post__player" controls src={{audio}}>
+        Your browser does not support the
+        <code>audio</code> element.
+    </audio>
+    
+    <h2>Get in touch</h2>
+    {% include "headshots.njk" %}
 
-    </div>
 </div>
+    
