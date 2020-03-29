@@ -1,14 +1,14 @@
 {
-    "name": "tomhazledine-11ty",
-    "version": "1.0.0",
-    "description": "tomhazledine.com built with 11ty",
+    "name": "aqoc-11ty",
+    "version": "2.0.0",
+    "description": "aquestionofcode.com built with 11ty",
     "main": "src/js/main.js",
     "scripts": {
         "test": "jest",
         "build": "webpack --mode=production",
         "build_dev": "webpack --mode=development",
         "dev": "webpack --watch --mode=development",
-        "11ty": "eleventy --serve --port=1337",
+        "11ty": "eleventy --serve --port=8001",
         "11ty_build": "eleventy",
         "11ty_debug": "DEBUG=Eleventy* eleventy",
         "build_all": "eleventy && npm run build"

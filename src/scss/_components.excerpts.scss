@@ -1,0 +1,18 @@
+.excerpt {
+    display: block;
+    text-decoration: none;
+    padding: 2rem 0 2rem 1rem;
+    border-left: 0.4rem solid $black;
+}
+
+.excerpt__title-number {
+    font-size: 2rem;
+}
+
+.exerpt__title-body {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.excerpt__date {
+    font-style: italic;
+}

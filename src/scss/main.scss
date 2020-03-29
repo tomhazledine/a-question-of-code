@@ -1,3 +1,9 @@
+//------------------------------------//
+
+.touche-de-rouge {
+    color: red;
+}
+
 // SETTINGS
 @import "settings.colours";
 @import "settings.fonts";
@@ -5,8 +11,8 @@
 
 // TOOLS
 @import "tools.placeholders";
-@import "tools.github-gist";
-@import "tools.a11y";
+@import "tools.mixins";
+@import "tools.general";
 
 // GENERIC
 @import "generic.reset";
@@ -14,37 +20,18 @@
 // BASE
 @import "base.general";
 @import "base.theme";
-@import "base.lists";
-@import "base.forms";
-@import "base.layout";
-@import "base.range";
-@import "base.checkbox";
-@import "base.images";
 
-// OBJECTS
-@import "objects.header";
-@import "objects.headeranimation";
-@import "objects.homecontent";
-@import "objects.contentblocks";
-@import "objects.footnotes";
-@import "objects.sidenotes";
-@import "objects.minipost";
-@import "objects.singlepost";
-@import "objects.singlenavigation";
-@import "objects.tweetwidget";
-@import "objects.tweetlink";
-@import "objects.comments";
-@import "objects.search";
-@import "objects.careergraph";
-@import "objects.ornaments";
-@import "objects.shortcodes";
-@import "objects.intronote";
-@import "objects.audiomodule";
-
-// COMPONENTS
-@import "components.showcase";
-@import "components.showcase-mini";
+// COMPOMENTS
+@import "components.archive";
+@import "components.blocks";
+@import "components.excerpts";
+@import "components.footer";
+@import "components.header";
+@import "components.headshots";
+@import "components.logo";
+@import "components.player.skeleton";
+@import "components.podcast-links";
+@import "components.post";
 
 // TRUMPS
 @import "trumps.utilities";
-@import "trumps.wpimages";

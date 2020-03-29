@@ -19,34 +19,20 @@ $silver: #ddd;
 $grey: #aaa;
 $black: #111;
 
-// Project Colours
-$black: #4d4d4d;
-$blackSoft: #666;
-$white: #fdfdfa;
-$cream: #efeeeb;
-$grey: #dad8d2;
-$greyLight: lighten($grey, 10%);
-$greyDark: darken($grey, 20%);
-$primary: #00b7c6;
-$secondary: #ff851b;
-
-$orange: #793200;
-$orange_dark: #c65100;
-$primary_dark: #007079;
-// $primary_light:#b2e9ea;
-$primary_light: #e4f6f5; //rgba($primary,.1);//#19EEFF;
+// Projcet colours
+$black: #3e3d38;
+$grey: #bdbdbd; //icons
+$grey_dark: #707070;
+$cream: #f6f6f3;
+$yellow: #ffdc1c;
+$pink: #f0258e;
 
 // Selection Colours
-$selection_primary: $white;
-$selection_secondary: #bbb; //rgba($primary,.8);
-$selection_tertiary: rgba($primary, 0.5); //rgba($black,.8);
 ::selection {
-    color: $selection_primary;
-    background: $selection_secondary;
+    color: $white;
+    background: $black;
 }
 a::selection {
-    color: $primary;
-    // text-decoration:none;
-    // background:$selection_tertiary;
-    text-shadow: none !important;
+    color: $black;
+    background: $white;
 }

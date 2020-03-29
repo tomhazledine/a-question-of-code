@@ -3,8 +3,8 @@
 
 // 01. REM font size with pixel fallback
 @function calculateRem($size) {
-  $remSize: $size / 16px;
-  @return $remSize * 1rem;
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
 }
 
 // This will output the font size in rem with a pixel fallback 
@@ -13,8 +13,8 @@
 // @include font-size(20px);
 
 @mixin font-size($size) {
-  font-size: $size;
-  font-size: calculateRem($size);
+    font-size: $size;
+    font-size: calculateRem($size);
 }
 
 // This will output opacity with the MS opacity included
@@ -23,7 +23,7 @@
 // @include opacity(0.9);
 
 @mixin opacity($opacity) {
-  opacity: $opacity;
-  $opacity-ie: $opacity * 100;
-  filter: alpha(opacity=$opacity-ie); //IE8
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
 }

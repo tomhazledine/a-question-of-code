@@ -1,0 +1,46 @@
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    // border-top: 1rem solid orange;
+}
+
+.header__home {
+    display: flex;
+    text-decoration: none;
+    .logo--small {
+        transition: fill 0.2s;
+    }
+    &:hover .logo--small {
+        fill: $orange;
+    }
+}
+.header__home-text,
+.header__link {
+    padding: 1rem 1rem;
+    > a {
+        line-height: 1;
+        text-decoration: none;
+    }
+    @include bp(d3) {
+        padding: 1rem 0.5rem;
+    }
+}
+
+.header__link--optional {
+    @include bp(d3) {
+        display: none;
+    }
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    li {
+        margin: 0 0.5em;
+        list-style: none;
+    }
+}

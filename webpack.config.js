@@ -10,9 +10,7 @@ const AppName = "tomhazledine";
 
 module.exports = (env, argv) => ({
     entry: {
-        app: "./src/js/app.js",
-        home: "./src/js/home.js",
-        rugby: "./src/js/rugby.js"
+        app: "./src/js/app.js"
     },
     output: {
         path: path.resolve(__dirname, "build"),

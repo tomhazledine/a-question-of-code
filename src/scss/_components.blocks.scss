@@ -1,0 +1,23 @@
+.home__header {
+    margin: 0 0 4rem 0;
+}
+
+.block--featured {
+    margin-bottom: 4rem;
+}
+.heading--label {
+    display: inline-block;
+    margin-left: -4rem;
+    padding: 0.5rem;
+    background: $black;
+    color: $cream;
+    @include bp(d2) {
+        margin-left: -1rem;
+    }
+}
+
+.block__cta {
+    display: block;
+    margin-top: 1em;
+    text-decoration: none;
+}

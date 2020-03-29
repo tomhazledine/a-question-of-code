@@ -1,0 +1,21 @@
+.headshots {
+    display: flex;
+    justify-content: space-around;
+    margin: 2em auto;
+}
+.headshot {
+    text-align: center;
+    margin: 1em;
+}
+.headshot__photo {
+    width: 6em;
+    height: 6em;
+    border: 0.2rem solid $black;
+    box-shadow: inset $cream 0 0 0 0.4rem, inset $black 0 0 0 0.6rem;
+    // padding-bottom: 100%;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto 0.5em;
+}
