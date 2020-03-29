@@ -1,0 +1,130 @@
+// .piano{background:red !important;}
+
+// Range: Track
+input[type="range"].pianoController {
+     display:block;
+     -webkit-appearance: none;
+     width: 100%;
+     height: 1em;
+     // margin: 2em 0;
+     padding: 0;
+     border: none;
+     border-radius: 0;
+     background: $black;
+     outline: none;
+     cursor: pointer;
+     box-shadow: inset darken($black,10%) -.5em .5em 0 0;
+     border-radius: .5em;
+     &:focus {
+          outline:none;
+     }
+     &::-moz-focus-outer {
+         border: 0;
+     }
+}
+
+// Range: Utilities
+input[type="range"].pianoController::-moz-range-track {
+     border: inherit;
+     background: transparent;
+     border-top:2em solid transparent;
+     border-bottom:2em solid transparent;
+}
+
+input[type="range"].pianoController::-ms-track {
+     border: inherit;
+     color: transparent; /* don't drawn vertical reference line */
+     background: transparent;
+     border-top:2em solid transparent;
+     border-bottom:2em solid transparent;
+}
+input[type="range"].pianoController::-ms-fill-lower,
+input[type="range"]::-ms-fill-upper {
+     background: transparent;
+}
+input[type="range"].pianoController::-ms-tooltip {
+     display: none;
+}
+
+// Range: Thumb
+input[type="range"].pianoController::-webkit-slider-thumb {
+     -webkit-appearance: none;
+     width: 2em;
+     height: 2em;
+     border: none;
+     border-radius: 0;
+     background: $primary;
+     cursor: pointer;
+     height: 4em;
+     box-shadow:
+          inset $primary 0 1em 0 0,
+          inset darken($primary,10%) 0 1.2em 0 0,
+          inset darken($primary,5%) 0 1.4em 0 0,
+          inset lighten($primary,05%) 0 1.5em 0 0,
+          inset $primary 0 1.8em 0 0,
+          inset darken($primary,10%) 0 2em 0 0,
+          inset darken($primary,5%) 0 2.1em 0 0,
+          inset lighten($primary,05%) 0 2.2em 0 0,
+          inset $primary 0 2.5em 0 0,
+          inset darken($primary,10%) 0 2.7em 0 0,
+          inset darken($primary,5%) 0 2.9em 0 0,
+          inset lighten($primary,05%) 0 3em 0 0,
+          rgba(black,.2) -.5em .5em 0 0;
+     border-bottom: .2em solid darken($primary,10%);
+     border-left: .2em solid darken($primary,10%);
+     border-top: .2em solid lighten($primary,5%);
+     border-right: .2em solid lighten($primary,5%);
+}
+input[type="range"].pianoController::-moz-range-thumb {
+     width: 2em;
+     height: 2em;
+     border: none;
+     border-radius: 0;
+     background: $primary;
+     cursor: pointer;
+     height: 4em;
+     box-shadow:
+          inset $primary 0 1em 0 0,
+          inset darken($primary,10%) 0 1.2em 0 0,
+          inset darken($primary,5%) 0 1.4em 0 0,
+          inset lighten($primary,05%) 0 1.5em 0 0,
+          inset $primary 0 1.8em 0 0,
+          inset darken($primary,10%) 0 2em 0 0,
+          inset darken($primary,5%) 0 2.1em 0 0,
+          inset lighten($primary,05%) 0 2.2em 0 0,
+          inset $primary 0 2.5em 0 0,
+          inset darken($primary,10%) 0 2.7em 0 0,
+          inset darken($primary,5%) 0 2.9em 0 0,
+          inset lighten($primary,05%) 0 3em 0 0,
+          rgba(black,.2) -.5em .5em 0 0;
+     border-bottom: .2em solid darken($primary,10%);
+     border-left: .2em solid darken($primary,10%);
+     border-top: .2em solid lighten($primary,5%);
+     border-right: .2em solid lighten($primary,5%);
+}
+input[type="range"].pianoController::-ms-thumb {
+     width: 1em;
+     height: 2em;
+     border-radius: 0;
+     border: 0;
+     background: $primary;
+     height: 4em;
+     box-shadow:
+          inset $primary 0 1em 0 0,
+          inset darken($primary,10%) 0 1.2em 0 0,
+          inset darken($primary,5%) 0 1.4em 0 0,
+          inset lighten($primary,05%) 0 1.5em 0 0,
+          inset $primary 0 1.8em 0 0,
+          inset darken($primary,10%) 0 2em 0 0,
+          inset darken($primary,5%) 0 2.1em 0 0,
+          inset lighten($primary,05%) 0 2.2em 0 0,
+          inset $primary 0 2.5em 0 0,
+          inset darken($primary,10%) 0 2.7em 0 0,
+          inset darken($primary,5%) 0 2.9em 0 0,
+          inset lighten($primary,05%) 0 3em 0 0,
+          rgba(black,.2) -.5em .5em 0 0;
+     border-bottom: .2em solid darken($primary,10%);
+     border-left: .2em solid darken($primary,10%);
+     border-top: .2em solid lighten($primary,5%);
+     border-right: .2em solid lighten($primary,5%);
+}

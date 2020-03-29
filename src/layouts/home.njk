@@ -1,0 +1,14 @@
+---
+layout: main.njk
+---
+<div class="wrapper--main" id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+        {% include "home-graph.njk" %}
+        <header class="entry-header">
+            <h1 class="entry-title">{{ heading }}</h1>
+        </header>
+        <div class="entry-content selectable-area">{{ content | safe }}</div>
+        <hr/>
+        {% include "featured-articles.njk" %}
+    </main>
+</div>

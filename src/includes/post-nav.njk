@@ -1,0 +1,37 @@
+
+{% set currentItemIndex = 0 %}
+{% for item in collections.articles %}
+  {% if item.url == page.url %}
+  	{% set currentItemIndex = loop.index0 %}
+	{% endif %}
+{% endfor %}
+
+{% set nextItemIndex = currentItemIndex + 1  %}
+{% set nextItem = collections.articles[nextItemIndex] %}
+
+{% set prevItemIndex = currentItemIndex - 1  %}
+{% set prevItem = collections.articles[prevItemIndex] %}
+
+<div class="clearfix singleNavigation">
+
+    {% if nextItem %}
+        <div class="postNavigation postNavigation--newer">
+            <p>Newer post:</p>
+            <a href={{ nextItem.url }} rel="bookmark">{{ nextItem.data.title }}</a>
+        </div>
+    {% else %}
+        <div class="postNavigation postNavigation--placeholder">
+        </div>
+    {% endif %}
+
+    {% if prevItem %}
+        <div class="postNavigation postNavigation--older">
+            <p>Older post:</p>
+            <a href={{ prevItem.url }} rel="bookmark">{{ prevItem.data.title }}</a>
+        </div>
+    {% else %}
+        <div class="postNavigation postNavigation--placeholder">
+        </div>
+    {% endif %}
+
+</div>

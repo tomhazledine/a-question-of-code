@@ -1,0 +1,81 @@
+.match {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.matches--solo {
+    margin: 6rem 0;
+}
+
+.match__date {
+    color: $greyDark;
+    font-size: 1.2rem;
+    width: 9rem;
+    flex-shrink: 0;
+    flex-grow: 0;
+    font-family: $code;
+}
+
+.match__team {
+    padding: 0 0.5rem;
+    width: 7rem;
+    text-align: right;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: $code;
+}
+.rugby--v2 .match__team {
+    width: 4rem;
+}
+.match__team--last {
+    text-align: left;
+}
+
+.match__team-ranking {
+    color: $greyDark;
+    // font-size: 1.4rem;
+    padding: 0 0.4rem;
+}
+.match__bar {
+    display: flex;
+    position: relative;
+    // height: 3rem;
+    width: 22rem;
+    flex-grow: 1;
+    // flex-shrink: 0;
+    // border-top: 0.1rem solid $black;
+    // border-bottom: 0.1rem solid $black;
+}
+.bar__inner {
+    height: 2.5rem;
+    background: $grey;
+    display: flex;
+    align-items: center;
+}
+.match__bar-divider {
+    display: block;
+    width: 0.1rem;
+    background: rgba($black, 0.4);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bar__inner--win {
+    background: $primary;
+}
+.bar__value {
+    padding: 0 0.5rem;
+    color: $black;
+    font-size: 1.4rem;
+    line-height: 1;
+    font-family: $code;
+}
+.bar__inner--win .bar__value {
+    color: $white;
+}
+.bar__inner:last-of-type {
+    justify-content: flex-end;
+}

@@ -1,0 +1,188 @@
+$colour_lego: $blue;
+$colour_mus: $green;
+$colour_art: $red;
+$colour_des: $black;
+$colour_dev: $primary;
+$colour_pod: $secondary;
+
+.homeGraphWrapper {
+    margin: 4em auto 4em;
+}
+
+.graph__generic,
+.homeGraph {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    @include bp(d1) {
+        width: 100%;
+    }
+}
+
+.graph__generic__svg,
+.home-graph__svg {
+    display: block;
+}
+
+.graph__generic,
+.homeGraph {
+    path {
+        stroke: $grey;
+        stroke-width: 0.1rem;
+        fill: none;
+        transition: stroke 0.2s;
+        &.selected {
+            stroke-width: 0.2rem;
+        }
+        &.line_lego.selected {
+            stroke: $colour_lego;
+        }
+        &.line_mus.selected {
+            stroke: $colour_mus;
+        }
+        &.line_art.selected {
+            stroke: $colour_art;
+        }
+        &.line_des.selected {
+            stroke: $colour_des;
+        }
+        &.line_dev.selected {
+            stroke: $colour_dev;
+        }
+        &.line_pod.selected {
+            stroke: $colour_pod;
+        }
+    }
+    .axis text {
+        fill: $greyDark;
+        font-family: $text;
+        @include bp(d3) {
+            font-size: 0.5em;
+        }
+    }
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: $grey;
+        stroke-width: 0.1rem;
+        shape-rendering: crispEdges;
+    }
+    //     .hover {
+    //         stroke: none;
+    //         fill: none;
+    //         r: 0.3rem;
+    //         display: none;
+    //         &.active {
+    //             display: block;
+    //         }
+    //         &.y_lego.selected {
+    //             fill: $colour_lego;
+    //         }
+    //         &.y_mus.selected {
+    //             fill: $colour_mus;
+    //         }
+    //         &.y_art.selected {
+    //             fill: $colour_art;
+    //         }
+    //         &.y_des.selected {
+    //             fill: $colour_des;
+    //         }
+    //         &.y_dev.selected {
+    //             fill: $colour_dev;
+    //         }
+    //     }
+    .chartarea {
+        stroke: none;
+        fill: rgba($primary, 0);
+        transition: fill 0.2s;
+        &.area_lego.selected {
+            fill: rgba($colour_lego, 0.3);
+        }
+        &.area_mus.selected {
+            fill: rgba($colour_mus, 0.3);
+        }
+        &.area_art.selected {
+            fill: rgba($colour_art, 0.3);
+        }
+        &.area_des.selected {
+            fill: rgba($colour_des, 0.3);
+        }
+        &.area_dev.selected {
+            fill: rgba($colour_dev, 0.3);
+        }
+        &.area_pod.selected {
+            fill: rgba($colour_pod, 0.3);
+        }
+    }
+
+    //     .mouse-catcher {
+    //         fill: none;
+    //         pointer-events: all;
+    //     }
+}
+
+.homeGraphTitle {
+    text-align: center;
+}
+
+.homeGraphSelectors {
+    text-align: center;
+    .homeGraphSelector {
+        font-size: 0.8em;
+        display: inline-block;
+        padding-right: 1em;
+        // font-weight:bold;
+        .visibleLabel {
+            user-select: none;
+            line-height: 1.4;
+            padding: 0 0.4em 0 0;
+        }
+        .check {
+            position: relative;
+            top: 0.1em;
+            &.lego .symLabel {
+                border-color: $colour_lego;
+                &:before {
+                    background: $colour_lego;
+                }
+            }
+            &.mus .symLabel {
+                border-color: $colour_mus;
+                &:before {
+                    background: $colour_mus;
+                }
+            }
+            &.art .symLabel {
+                border-color: $colour_art;
+                &:before {
+                    background: $colour_art;
+                }
+            }
+            &.des .symLabel {
+                border-color: $colour_des;
+                &:before {
+                    background: $colour_des;
+                }
+            }
+            &.dev .symLabel {
+                border-color: $colour_dev;
+                &:before {
+                    background: $colour_dev;
+                }
+            }
+            &.pod .symLabel {
+                border-color: $colour_pod;
+                &:before {
+                    background: $colour_pod;
+                }
+            }
+        }
+    }
+}
+
+.caption {
+    display: block;
+    width: 100%;
+    text-align: center;
+}

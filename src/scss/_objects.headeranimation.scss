@@ -1,0 +1,66 @@
+$masterHeight: 200px;
+$innerWidth: $masterHeight * 1.42;
+$blockWidth: $masterHeight / 14;
+$multiplier: 2;
+
+@function randomRange($min, $max) {
+    $normalizedMin: $min * 1000;
+    $normalizedMax: $max * 1000;
+    $result: random($normalizedMax - $normalizedMin) + $normalizedMin;
+    @return $result / 1000;
+}
+
+.corner-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $masterHeight;
+    height: $masterHeight;
+    overflow: hidden;
+}
+
+.corner-animation__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $innerWidth;
+    height: $innerWidth / 2;
+    transform: translateY($masterHeight - ($innerWidth / 2)) rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.corner-animation__item {
+    display: block;
+    width: $blockWidth;
+    height: $blockWidth;
+    position: absolute;
+    top: 0;
+    left: -$blockWidth;
+    animation: corner-slide 2s cubic-bezier(0, 0.7, 0.8, 0) infinite;
+    transform: rotate(45deg);
+}
+
+@for $i from 1 to 21 {
+    $scaleFactor: randomRange(0.5, 1.5);
+    $opacity: 1 - (0.05 * $i);
+    $top: (($i - 1) * $blockWidth) * ($i * 0.025);
+    .corner-animation__item:nth-of-type(#{$i}) {
+        top: $top;
+        font-size: $blockWidth * $scaleFactor;
+        width: $blockWidth * $scaleFactor;
+        height: $blockWidth * $scaleFactor;
+        color: hsla(185, 100, 39, $opacity);
+        // background: hsla(185, 100, 39, $opacity);
+        animation-delay: #{randomRange(0, 3)}s;
+        animation-duration: #{randomRange(0.4, 2) * $multiplier}s;
+    }
+}
+
+@keyframes corner-slide {
+    from {
+        left: -$blockWidth;
+    }
+    to {
+        left: 100%;
+    }
+}

@@ -1,0 +1,139 @@
+body {
+    font-size: 1.6em;
+    // width: 90%;
+    // max-width: 54em;
+    // padding: 2em 0.5em;
+    // margin: 0 auto 4em;
+    color: $black;
+    background: $white;
+    // background:white;
+    font-family: $text;
+    line-height: 1.7;
+    // background:$cream;
+    @include bp(d3) {
+        font-size: 1.4em;
+    }
+}
+
+.wrapper--main {
+    width: 90%;
+    max-width: 54em;
+    padding: 2em 0.5em;
+    margin: 0 auto 4em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    font-size: 1.2em;
+    // font-family:$display;
+    // padding:0 0 1em 0;
+}
+
+a {
+    color: $primary;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+h1 {
+    font-weight: bold;
+    // font-size:1.3em;
+    padding-bottom: 0.2em;
+    // margin-bottom:5em;
+    display: block;
+    // border-bottom:.1rem solid $grey;
+}
+
+h2 {
+    // font-size:1.2em;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    display: inline;
+    // padding-bottom:.5em;
+}
+
+p {
+    margin-bottom: 3em;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+sub,
+sup {
+    // Specified in % so that the sup/sup is the right size relative to the surrounding text.
+    font-size: 75%;
+
+    // Zero out the line-height so that it doesn't interfere with the positioning that follows.
+    line-height: 0;
+
+    // Where the magic happens: makes all browsers position the sup/sup properly, relative to the surrounding text.
+    position: relative;
+
+    // Note that if you're using Eric Meyer's reset.css, this is already set and you can remove this rule
+    // vertical-align: baseline;
+}
+
+sup {
+    // Move the superscripted text up.
+    top: -0.5em;
+}
+
+sub {
+    // Move the subscripted text down, but only half as far down as the superscript moved up.
+    bottom: -0.25em;
+}
+
+article > code,
+p > code {
+    font-family: $code;
+    line-height: 1.2em;
+    font-size: 0.8em;
+    background: $cream;
+    padding-right: 0.2em;
+    padding-left: 0.3em;
+}
+
+pre {
+    font-family: $code !important;
+    // padding:.1em;
+    // border-radius: 4px;
+    border: 1px solid $grey;
+    overflow: hidden;
+    // border-radius:.5em;
+    background: $cream !important;
+    font-size: 1.5rem !important;
+    // background: #2d2d2d;
+    padding: 2rem 1rem !important;
+    margin: 2rem 0 !important;
+    // margin: 1em 0 !important;
+    overflow: auto;
+    > code {
+        text-shadow: none !important;
+        color: $white;
+        font-family: $code !important;
+    }
+}
+
+pre > code .token.operator,
+pre > code .token.entity,
+pre > code .token.url,
+pre > code .language-css .token.string,
+pre > code .style .token.string {
+    background: rgba($cream, 0.4);
+}

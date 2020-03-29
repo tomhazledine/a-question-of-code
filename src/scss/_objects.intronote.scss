@@ -1,0 +1,20 @@
+.intro-note {
+    font-size: 0.9em;
+    background: $primary_light;
+    border-radius: 0.2em;
+    box-shadow: rgba($black, 0.2) 0 0.2em 0.1em -0.1em;
+    padding: 0.5em 1em;
+    margin-bottom: 2em;
+    // line-height:1.4;
+}
+.intro-note-link,
+.intro-note a {
+    color: $primary;
+    text-shadow: none;
+    box-shadow: inset $primary_light 0 -0.3rem 0 0, inset $primary 0 -0.3rem 0 0;
+    &:hover {
+        color: $black;
+        box-shadow: inset $primary_light 0 -0rem 0 0,
+            inset $primary 0 -0.3rem 0 0;
+    }
+}

@@ -1,0 +1,50 @@
+.singleNavigation {
+    margin-top: 4em;
+    display: flex;
+    justify-content: space-between;
+    @include bp(d2) {
+        flex-wrap: wrap;
+    }
+}
+
+.postNavigation {
+    margin-bottom: 1em;
+    width: 49%;
+    // float:left;
+    margin-right: 1%;
+    &:nth-of-type(2n) {
+        margin-right: 0;
+        margin-left: 1%;
+        text-align: right;
+    }
+    p {
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 0.7em;
+        color: $greyDark;
+        padding: 0;
+        line-height: 1;
+    }
+    a {
+        line-height: 1;
+    }
+    @include bp(d2) {
+        width: 100%;
+        // float:none;
+        margin-right: 0;
+        text-align: left;
+        &:nth-of-type(2n) {
+            margin-right: 0;
+            margin-left: 0;
+            text-align: left;
+        }
+    }
+}
+.postNavigation.postNavigation--newer {
+    @include bp(d2) {
+    }
+}
+.postNavigation.postNavigation--older {
+    @include bp(d2) {
+    }
+}

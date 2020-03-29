@@ -1,0 +1,67 @@
+.site-header {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    // background:white;
+    background: $white;
+    border-top: 1px solid $grey;
+    z-index: 4;
+    // box-shadow:rgba($black,.1) 0 -.1em .1em 0;
+}
+
+.header-inner {
+    max-width: 54em;
+    padding: 0.5em;
+    margin: 0 auto;
+}
+
+.site-title {
+    display: inline;
+}
+
+.main-navigation {
+    display: inline;
+
+    > div {
+        display: inline;
+    }
+
+    ul {
+        display: inline;
+    }
+
+    li {
+        display: inline;
+        &:before {
+            display: none;
+        }
+    }
+
+    .current-menu-item a {
+        position: relative;
+        display: inline-block;
+        cursor: default;
+        &:before {
+            content: "";
+            display: block;
+            width: 2em;
+            height: 1px;
+            background: $black;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1em;
+        }
+    }
+}
+
+.home-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $black;
+    font-size: 1em;
+    display: block;
+    padding: 0.5em;
+}

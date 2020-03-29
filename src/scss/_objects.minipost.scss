@@ -1,0 +1,22 @@
+.snippet {
+    @include bp(d3) {
+        margin-bottom: 1em;
+    }
+}
+
+.snippet__link {
+    &:hover {
+        color: $black;
+    }
+}
+
+.snippet__excerpt {
+    margin-left: 1em;
+}
+
+.snippet__category {
+    font-style: italic;
+    @include bp(d2) {
+        display: none;
+    }
+}

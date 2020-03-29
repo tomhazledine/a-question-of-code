@@ -1,0 +1,94 @@
+.has-sidenotes {
+    width: 85%;
+    position: relative;
+    @include bp(d1) {
+        width: 70%;
+    }
+    @include bp(d2) {
+        width: 100%;
+    }
+}
+
+.pseudo-home .has-sidenotes,
+.home .has-sidenotes {
+    position: relative;
+    @include bp(d1_5) {
+        width: 100%;
+    }
+}
+
+.has-sidenotes > p {
+    position: relative;
+}
+
+.sidenote {
+    display: block;
+    padding-left: 2em;
+    // background:rgba($red,.5);
+    position: absolute;
+    left: 100%;
+    width: 25%;
+    font-size: 0.9em;
+    line-height: 1.4;
+    font-style: italic;
+    transform: translateY(-1.6em);
+    .sidenote-bracket {
+        display: none;
+    }
+    @include bp(u2) {
+        width: 30%;
+    }
+    @include bp(d1) {
+        width: 42%;
+    }
+    @include bp(d2) {
+        position: relative;
+        padding-left: 0;
+        display: inline;
+        font-size: 1em;
+        line-height: inherit;
+        font-style: inherit;
+        left: auto;
+        width: auto;
+        transform: none;
+        .sidenote-bracket {
+            display: inline;
+        }
+    }
+}
+
+.homepage-sidenote-wrapper {
+    position: relative;
+}
+
+.pseudo-home .sidenote,
+.home .sidenote {
+    top: 0;
+    transform: none;
+    @include bp(d1_5) {
+        position: relative;
+        padding-left: 0;
+        display: block;
+        width: 80%;
+        line-height: 1.4;
+        font-size: 1em;
+        // line-height:inherit;
+        font-style: inherit;
+        left: auto;
+        // width:auto;
+        margin: 2em auto 2em;
+        .sidenote-bracket {
+            display: inline;
+        }
+    }
+    @include bp(d2) {
+        width: 100%;
+    }
+}
+
+.homepage-sidenote-hr {
+    display: none;
+    @include bp(d1_5) {
+        display: block;
+    }
+}

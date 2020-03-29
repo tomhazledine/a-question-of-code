@@ -1,0 +1,124 @@
+// Typography etc.
+
+// Typography etc.
+
+// Font-face stub code. Use this if we
+// want to include our own font files:
+
+@font-face {
+    font-family: "Cartograph Sans";
+    src: url("../fonts/cartograph_sans/CartographSansCF-Medium.eot");
+    src: url("../fonts/cartograph_sans/CartographSansCF-Medium.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/cartograph_sans/CartographSansCF-Medium.woff")
+            format("woff"),
+        url("../fonts/cartograph_sans/CartographSansCF-Medium.ttf")
+            format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cartograph Sans";
+    src: url("../fonts/cartograph_sans/CartographSansCF-MediumItalic.eot");
+    src: url("../fonts/cartograph_sans/CartographSansCF-MediumItalic.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/cartograph_sans/CartographSansCF-MediumItalic.woff")
+            format("woff"),
+        url("../fonts/cartograph_sans/CartographSansCF-MediumItalic.ttf")
+            format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Cartograph Sans";
+    src: url("../fonts/cartograph_sans/CartographSansCF-Heavy.eot");
+    src: url("../fonts/cartograph_sans/CartographSansCF-Heavy.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/cartograph_sans/CartographSansCF-Heavy.woff")
+            format("woff"),
+        url("../fonts/cartograph_sans/CartographSansCF-Heavy.ttf")
+            format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Cartograph Sans";
+    src: url("../fonts/cartograph_sans/CartographSansCF-HeavyItalic.eot");
+    src: url("../fonts/cartograph_sans/CartographSansCF-HeavyItalic.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/cartograph_sans/CartographSansCF-HeavyItalic.woff")
+            format("woff"),
+        url("../fonts/cartograph_sans/CartographSansCF-HeavyItalic.ttf")
+            format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Cartograph Mono";
+    src: url("../fonts/cartograph_mono/CartographMonoCF-Medium.eot");
+    src: url("../fonts/cartograph_mono/CartographMonoCF-Medium.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/cartograph_mono/CartographMonoCF-Medium.woff")
+            format("woff"),
+        url("../fonts/cartograph_mono/CartographMonoCF-Medium.ttf")
+            format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+// @font-face {
+//     font-family: "Cartograph Mono";
+//     src: url("../fonts/cartograph_mono/CartographMonoCF-MediumItalic.eot");
+//     src: url("../fonts/cartograph_mono/CartographMonoCF-MediumItalic.eot?#iefix")
+//             format("embedded-opentype"),
+//         url("../fonts/cartograph_mono/CartographMonoCF-MediumItalic.woff")
+//             format("woff"),
+//         url("../fonts/cartograph_mono/CartographMonoCF-MediumItalic.ttf")
+//             format("truetype");
+//     font-weight: normal;
+//     font-style: italic;
+// }
+
+// @font-face {
+//     font-family: "Cartograph Mono";
+//     src: url("../fonts/cartograph_mono/CartographMonoCF-Heavy.eot");
+//     src: url("../fonts/cartograph_mono/CartographMonoCF-Heavy.eot?#iefix")
+//             format("embedded-opentype"),
+//         url("../fonts/cartograph_mono/CartographMonoCF-Heavy.woff")
+//             format("woff"),
+//         url("../fonts/cartograph_mono/CartographMonoCF-Heavy.ttf")
+//             format("truetype");
+//     font-weight: bold;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: "Cartograph Mono";
+//     src: url("../fonts/cartograph_mono/CartographMonoCF-HeavyItalic.eot");
+//     src: url("../fonts/cartograph_mono/CartographMonoCF-HeavyItalic.eot?#iefix")
+//             format("embedded-opentype"),
+//         url("../fonts/cartograph_mono/CartographMonoCF-HeavyItalic.woff")
+//             format("woff"),
+//         url("../fonts/cartograph_mono/CartographMonoCF-HeavyItalic.ttf")
+//             format("truetype");
+//     font-weight: bold;
+//     font-style: italic;
+// }
+
+// Fonts
+$display: "Cartograph Sans", "brandon-grotesque", "futura", "gil sans",
+    sans-serif;
+$text: "Cartograph Sans", "ff-tisa-web-pro", georgia, serif;
+// $display:$text;
+$book: 400;
+$bold: 700;
+$code: "Cartograph Mono", Menlo, Monaco, "Andale Mono", "Lucida Console",
+    "Courier New", monospace; //"droid-sans-mono",monospace;
+
+// Weights
+$book: 400;
+$bold: 700;

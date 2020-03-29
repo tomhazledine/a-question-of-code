@@ -1,0 +1,52 @@
+// COLOURS
+
+// "The New Defaults"
+$aqua: #7fdbff;
+$blue: #0074d9;
+$navy: #001f3f;
+$teal: #39cccc;
+$green: #2ecc40;
+$olive: #3d9970;
+$lime: #01ff70;
+$yellow: #ffdc00;
+$orange: #ff851b;
+$red: #ff4136;
+$fuchsia: #f012be;
+$purple: #b10dc9;
+$maroon: #85144b;
+$white: #fff;
+$silver: #ddd;
+$grey: #aaa;
+$black: #111;
+
+// Project Colours
+$black: #4d4d4d;
+$blackSoft: #666;
+$white: #fdfdfa;
+$cream: #efeeeb;
+$grey: #dad8d2;
+$greyLight: lighten($grey, 10%);
+$greyDark: darken($grey, 20%);
+$primary: #00b7c6;
+$secondary: #ff851b;
+
+$orange: #793200;
+$orange_dark: #c65100;
+$primary_dark: #007079;
+// $primary_light:#b2e9ea;
+$primary_light: #e4f6f5; //rgba($primary,.1);//#19EEFF;
+
+// Selection Colours
+$selection_primary: $white;
+$selection_secondary: #bbb; //rgba($primary,.8);
+$selection_tertiary: rgba($primary, 0.5); //rgba($black,.8);
+::selection {
+    color: $selection_primary;
+    background: $selection_secondary;
+}
+a::selection {
+    color: $primary;
+    // text-decoration:none;
+    // background:$selection_tertiary;
+    text-shadow: none !important;
+}

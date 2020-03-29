@@ -1,0 +1,74 @@
+---
+layout: main.njk
+---
+<article class="wrapper--main" itemprop="mainEntity" itemtype="http://schema.org/BlogPosting">
+    <div class="entry-content" itemprop="articleBody mainEntityOfPage">
+        <header class="entry-header">
+            <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                {% if categories[0] === "code" %}
+                    {% include "icons/code.njk" %}
+                {% elif categories[0] === "audio" %}
+                    {% include "icons/music.njk" %}
+                {% else %}
+                    {% include "icons/pages.njk" %}
+                {% endif %}
+            </div>
+
+            <h1 class="entry-title" itemprop="name headline">{{title}}</h1>
+
+            <div class="entry-meta">
+                <span class="visuallyhidden">Published on </span>
+                <time datetime="{{date | datefull }}" itemprop="datePublished">{{date | date}}</time>
+                <span class="visuallyhidden">Modified on <time datetime="{{date | datefull }}" itemprop="dateModified">{{date | date}}</time></span>
+                {% if read_time %}
+                    <span> – </span>
+                    <span class="readingTime">Read time: {{read_time}}</span>
+                    {# <span class="visuallyhidden" itemprop="timeRequired" >
+                        P{readingTimeMinutes}M{readingTimeSeconds}S
+                    </span> #}
+                {% endif %}
+                <span class="visuallyhidden" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+                    <span itemprop="name"><a href="https://plus.google.com/111879829548102811838" itemprop="url" rel="author">Tom Hazledine</a></span>
+                </span>
+                <span class="visuallyhidden" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+                    <meta itemprop="name" content="Tom Hazledine" />
+                    <div itemprop="logo" itemScope itemtype="https://schema.org/ImageObject">
+                        <img src="/images/pages.png" alt="" />
+                        <meta itemprop="url" content="/images/pages.png" />
+                        <meta itemprop="width" content="32" />
+                        <meta itemprop="height" content="32" />
+                    </div>
+                </span>
+            </div>
+        </header>
+        
+        {% if intro_note %}
+            <div class="intro-note">
+                <span class="intro-note-text">{{intro_note}}</span>
+                {% if intro_link %}
+                    <a href="{{intro_link.link}}" class="intro-note-link">{{intro_link.display}}</a>
+                {% endif %}
+            </div>
+        {% endif %}
+        
+        <div class="selectable-area first-selectable-area" >
+            {{ content | safe }}
+        </div>
+</article>
+
+<div>
+    <h1>This is full width</h1>
+</div>
+
+<div class="wrapper--main">
+    <aside class="entry-content">
+
+        <form class="tweet-link-wrapper" id="tweet-form" action="">
+            {% include "icons/twitter.njk" %}
+            <input type="textarea" name="tweet-content" value="@thomashazledine ">
+            <button id="tweet-form-submit" class="tweet-this faux-button">Tweet</button>
+        </form>
+
+        {% include "post-nav.njk" %}
+    </aside>
+</div>

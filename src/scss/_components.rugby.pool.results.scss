@@ -1,0 +1,113 @@
+.pool-results {
+    // border-top: 0.1rem solid $grey;
+    width: 100%;
+    padding-right: 4rem;
+    @include bp(d1_5) {
+        padding-right: 7rem;
+    }
+}
+
+.pool-result {
+    display: flex;
+    justify-content: stretch;
+    padding: 0.4rem 2rem 0.4rem 0.4rem;
+    border-bottom: 0.1rem solid $grey;
+    // &:nth-of-type(2n) {
+    //     background: $greyLight;
+    //     &.result__0,
+    //     &.result__1 {
+    //         background: $primary;
+    //     }
+    // }
+    position: relative;
+    list-style: none;
+    margin: 0;
+    &:before {
+        display: none;
+    }
+}
+
+.result__heading {
+    font-weight: bold;
+    border-bottom: 0.1rem solid $grey;
+}
+.result__number {
+    width: 3rem;
+    text-align: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    // border-right: 0.1rem solid $black;
+    margin-right: 0.5rem;
+}
+.result__name {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.result__wins {
+    flex-grow: 0;
+    flex-shrink: 0;
+    color: $greyDark;
+    padding-left: 0.2rem;
+}
+
+.result__final {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -6rem;
+    color: $primary;
+    font-family: $code;
+    font-size: 1.4rem;
+    transform: translateY(-50%);
+}
+
+.result__0,
+.result__1 {
+    .result__wins {
+        color: $white;
+    }
+}
+.result__points {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 7rem;
+    text-align: right;
+    // margin-lefrt:
+    // color: $grey__dark;
+    padding-left: 0.2rem;
+}
+
+.result__0,
+.result__1 {
+    background: $primary;
+    color: $white;
+    position: relative;
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        display: block;
+        transform: translateY(-50%);
+        right: -3rem;
+        left: auto;
+    }
+    &:before {
+        top: 50%;
+        display: block;
+        border-top: 0.5rem solid transparent;
+        border-left: 0.8rem solid $primary;
+        border-bottom: 0.5rem solid transparent;
+        height: 0;
+        width: 0;
+    }
+    &:after {
+        width: 2.8rem;
+        right: -2.8rem;
+        background: $primary;
+        height: 0.2rem;
+    }
+}
+.result__0 {
+    border-bottom: 0.1rem solid rgba($white, 0.2);
+}

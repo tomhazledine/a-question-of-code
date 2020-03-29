@@ -1,0 +1,8 @@
+.sidenote.home-content{
+    @include bp(d2){
+        display:block;
+        margin-bottom:2em;
+        font-size:.9em;
+        line-height:1.4;
+    }
+}

@@ -1,0 +1,24 @@
+.showcase__logo {
+    display: block;
+    width: 4em;
+    height: 4em;
+    margin: 0 auto 2em;
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.showcase__topic-links {
+}
+
+.showcase__topic-link {
+    display: inline;
+    &:after {
+        color: $black;
+        content: ', ';
+    }
+    &:last-of-type:after {
+        content: '';
+    }
+}
