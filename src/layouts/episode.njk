@@ -2,28 +2,6 @@
 layout: main.njk
 ---
 
-{# <Helmet>
-    <meta name="twitter:card" content="summary" />
-    <meta
-        name="twitter:creator"
-        content={data.site.siteMetadata.twitter}
-    />
-    <meta property="og:url" content={location.href} />
-    <meta
-        property="og:title"
-        content={`#${post.frontmatter.number}: ${post.frontmatter.title}`}
-    />
-    <meta
-        property="og:description"
-        content={post.frontmatter.summary}
-    />
-    <meta
-        name="twitter:image"
-        content={`${data.site.siteMetadata.siteURL}${Logo}`}
-    />
-    <meta property="og:image" content={Logo} />
-</Helmet> #}
-
 
 <div class="post__header">
     <h1 class="title--page">{{title}}</h1>
@@ -33,7 +11,7 @@ layout: main.njk
 </div>
 <div class="post__content">
 
-        {# <span class="visuallyhidden">Published on </span>
+        <span class="visuallyhidden">Published on </span>
         <time datetime="{{date | datefull }}" itemprop="datePublished">{{date | date}}</time>
         <span class="visuallyhidden">Modified on <time datetime="{{date | datefull }}" itemprop="dateModified">{{date | date}}</time></span>
         <span class="visuallyhidden" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -42,12 +20,12 @@ layout: main.njk
         <span class="visuallyhidden" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
             <meta itemprop="name" content="Tom Hazledine" />
             <div itemprop="logo" itemScope itemtype="https://schema.org/ImageObject">
-                <img src="/images/pages.png" alt="" />
-                <meta itemprop="url" content="/images/pages.png" />
+                <img src="/images/aqoc_cover.jpg" alt="" />
+                <meta itemprop="url" content="/images/aqoc_cover.jpg" />
                 <meta itemprop="width" content="32" />
                 <meta itemprop="height" content="32" />
             </div>
-        </span> #}
+        </span>
         
     {{ content | safe }}
     

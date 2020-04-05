@@ -14,27 +14,24 @@
         <link rel="shortcut icon" href="/images/favicon.png">
         <link rel="shortcut icon" href="/images/favicon.ico">
 
+        {% if title == "Home" %}
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:creator" content={{global.twitterHandle}} />
+            <meta property="og:url" content="{{global.siteURL}}{{page.url}}" />
+            <meta property="og:title" content="{{global.siteTitle}}" />
+            <meta property="og:description" content="{{global.summary}}" />
+            <meta name="twitter:image" content="{{global.siteURL}}/images/aqoc_cover.jpg" />
+            <meta property="og:image" content="{{global.siteURL}}/images/aqoc_cover.jpg" />
+        {% endif %}
 
         {% for tag in tags %}
             {% if tag === 'episode' %}
                 <meta name="twitter:card" content="summary" />
-                <meta
-                    name="twitter:creator"
-                    content={{global.twitterHandle}}
-                />
+                <meta name="twitter:creator" content={{global.twitterHandle}} />
                 <meta property="og:url" content="{{global.siteURL}}{{page.url}}" />
-                <meta
-                    property="og:title"
-                    content="{{number}}: {{title}}"
-                />
-                <meta
-                    property="og:description"
-                    content="{{summary}}"
-                />
-                <meta
-                    name="twitter:image"
-                    content="{{global.siteURL}}/images/aqoc_cover.jpg"
-                />
+                <meta property="og:title" content="{{number}}: {{title}}" />
+                <meta property="og:description" content="{{summary}}" />
+                <meta name="twitter:image" content="{{global.siteURL}}/images/aqoc_cover.jpg" />
                 <meta property="og:image" content="{{global.siteURL}}/images/aqoc_cover.jpg" />
             {% endif %}
         {% endfor %}
