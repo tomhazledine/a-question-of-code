@@ -6,25 +6,26 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const SpriteLoaderPlugin = require("svg-sprite-loader/plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
-const AppName = "tomhazledine";
+const AppName = "aqoc";
 
 module.exports = (env, argv) => ({
     entry: {
-        app: "./src/js/app.js"
+        app: "./src/js/app.js",
+        player: "./src/js/player.js",
     },
     output: {
         path: path.resolve(__dirname, "build"),
-        filename: `${AppName}.[name].js`
+        filename: `${AppName}.[name].js`,
     },
     optimization: {
         minimizer: [
             new UglifyJsPlugin({
                 cache: true,
                 parallel: true,
-                sourceMap: true // set to true if you want JS source maps
+                sourceMap: true, // set to true if you want JS source maps
             }),
-            new OptimizeCSSAssetsPlugin({})
-        ]
+            new OptimizeCSSAssetsPlugin({}),
+        ],
     },
     module: {
         rules: [
@@ -47,15 +48,15 @@ module.exports = (env, argv) => ({
                                     "liquid",
                                     "markdown",
                                     "markup",
-                                    "php"
+                                    "php",
                                 ],
                                 plugins: ["line-numbers"],
                                 theme: "default", //"coy","tomorrow"
-                                css: true
-                            }
-                        ]
-                    ]
-                }
+                                css: true,
+                            },
+                        ],
+                    ],
+                },
             },
             {
                 test: /\.[s]?css$/,
@@ -68,27 +69,27 @@ module.exports = (env, argv) => ({
                     {
                         loader: "css-loader", // translates CSS into CommonJS
                         options: {
-                            sourceMap: true
-                        }
+                            sourceMap: true,
+                        },
                     },
                     {
                         loader: "postcss-loader",
                         options: {
-                            sourceMap: true
-                        }
+                            sourceMap: true,
+                        },
                     },
                     // 'resolve-url-loader',
                     {
                         loader: "sass-loader", // compiles Sass to CSS
                         options: {
-                            sourceMap: true
-                        }
-                    }
-                ]
+                            sourceMap: true,
+                        },
+                    },
+                ],
             },
             {
                 test: /\.(png|jpg|gif)$/,
-                use: ["file-loader"]
+                use: ["file-loader"],
             },
             {
                 test: /\.svg$/,
@@ -98,11 +99,11 @@ module.exports = (env, argv) => ({
                         options: {
                             extract: true,
                             spriteFilename: "icons/iconsprite.svg.php",
-                            path: path.resolve(__dirname, "assets")
-                        }
+                            path: path.resolve(__dirname, "assets"),
+                        },
                     },
-                    "svgo-loader"
-                ]
+                    "svgo-loader",
+                ],
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
@@ -111,19 +112,19 @@ module.exports = (env, argv) => ({
                         loader: "file-loader",
                         options: {
                             path: path.resolve(__dirname, "assets/css"),
-                            name: "fonts/[name].[ext]"
-                        }
-                    }
-                ]
-            }
-        ]
+                            name: "fonts/[name].[ext]",
+                        },
+                    },
+                ],
+            },
+        ],
     },
     plugins: [
         new CopyWebpackPlugin([
             {
                 from: path.resolve(__dirname, "public"),
-                to: path.resolve(__dirname, "build")
-            }
+                to: path.resolve(__dirname, "build"),
+            },
         ]),
         // new HtmlWebpackPlugin({ title: AppName, template: "demo/index.html" }),
         new MiniCssExtractPlugin({
@@ -131,9 +132,9 @@ module.exports = (env, argv) => ({
             // both options are optional
             path: path.resolve(__dirname, "build/css"),
             filename: `${AppName}.[name].css`,
-            chunkFilename: "[id].css"
+            chunkFilename: "[id].css",
         }),
         new SpriteLoaderPlugin(),
-        new webpack.HotModuleReplacementPlugin()
-    ]
+        new webpack.HotModuleReplacementPlugin(),
+    ],
 });

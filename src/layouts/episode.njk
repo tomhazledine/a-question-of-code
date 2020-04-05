@@ -1,5 +1,6 @@
 ---
 layout: main.njk
+scripts: ['player']
 ---
 
 
@@ -28,11 +29,13 @@ layout: main.njk
         </span>
         
     {{ content | safe }}
-    
-    <audio preload="none" class="post__player" controls src={{audio}}>
-        Your browser does not support the
-        <code>audio</code> element.
-    </audio>
+
+    <div id="player__wrapper">
+        <audio preload="none" class="post__player" controls src={{audio}}>
+            Your browser does not support the
+            <code>audio</code> element.
+        </audio>
+    </div>
     
     <h2>Get in touch</h2>
     {% include "headshots.njk" %}
