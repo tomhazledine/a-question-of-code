@@ -4,7 +4,7 @@ title: "Why is time so hard to work with?"
 number: "57"
 date: "2020-04-06"
 tags: ["episode"]
-audio: "https://media.transistor.fm/.mp3"
+audio: "https://media.transistor.fm/9ddc908d.mp3"
 summary: "At some point, every developer needs to deal with time in their code. Here are some reasons coding with times and dates should fill you with dread."
 ---
 
@@ -16,5 +16,7 @@ But if you're unlucky enough to actually _have_ to programme with times and date
 
 * [The Problem with Time & Timezones - Computerphile](https://www.youtube.com/watch?v=-5wpm-gesOY)
 * [Internationalis(z)ing Code - Computerphile](https://www.youtube.com/watch?v=0j74jcxSunY)
-* [Why 2020 Started On December 30th](https://www.youtube.com/watch?v=D3jxx8Yyw1c)
+* [Why 2020 Started On December 30th - Tom Scott](https://www.youtube.com/watch?v=D3jxx8Yyw1c)
+* [The world's silliest time zones - Map Men](https://www.youtube.com/watch?v=NBDaLK6EjwI&t=286s)
+* [Daylight Saving Time Explained - CGP Grey](https://www.youtube.com/watch?v=84aWtseb2-4)
 * [moment.js](https://momentjs.com/)
