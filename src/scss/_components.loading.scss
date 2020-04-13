@@ -1,0 +1,28 @@
+.icon {
+    width: 2em;
+    height: 2em;
+    fill: $black;
+}
+
+.icon--loading {
+    position: relative;
+    // padding: 0.2em;
+    overflow: visible;
+}
+
+.icon--loading__inner {
+    width: 2em;
+    height: 2em;
+    fill: $black;
+    animation: spin infinite linear 1s;
+    transform-origin: center;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
