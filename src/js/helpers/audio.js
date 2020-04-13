@@ -22,3 +22,11 @@ export const formatTime = (seconds) => {
 
     return parsedTime;
 };
+
+export const calculateCurrentPercentage = (current, duration) => {
+    if (!current || !duration) return 0;
+    const percentage = ((current / duration) * 100).toFixed(2);
+    return percentage;
+};
+export const currentTimeFromPercentage = (duration, percentage) =>
+    duration * (percentage / 100);
