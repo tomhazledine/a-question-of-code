@@ -4,10 +4,9 @@ title: "What is a resilient website? (with Jeremy Keith)"
 number: "60"
 date: "2020-04-27"
 tags: ["episode"]
-audio: "https://media.transistor.fm/.mp3"
+audio: "https://media.transistor.fm/eb621b37.mp3"
 summary: "How can we make the web work well for everybody?"
 ---
-
 This week we're joined by Jeremy Keith, a web developer and author who's had a massive influence on at least one of our hosts. Jeremy introduces us to the concept of "resilient" websites, and has loads of advice for developers new to the field. The web is for everyone, and websites should reflect that: if you're using some advanced fancy features, make sure that your core functionality is available to everyone.
 
 We delve into the thorny issues of progressive enhancement and graceful degradation. Are they ultimately the same thing? Or does real-world pragmatism get in the way? Is it easier to become a web developer today? Or has the increase in dev-tooling added too much complexity? Find out all this and more in this week's resilient instalment of A Question of Code.
