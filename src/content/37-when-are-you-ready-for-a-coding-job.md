@@ -3,7 +3,8 @@ layout: "episode.njk"
 title: "When are you ready for a coding job?"
 number: "37"
 date: "2019-10-07"
-tags: ["episode"]
+tags: ["episode", "featured"]
+featured: true
 audio: "https://media.transistor.fm/e6049b3e.mp3"
 summary: "It's hard to be sure when you know enough to be qualified for a career in programming"
 ---
