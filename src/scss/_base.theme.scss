@@ -23,6 +23,17 @@ body {
     font-size: 1.2em;
 }
 
+.home__signup {
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+
+#mc_embed_signup {
+    clear: left;
+    width: 100%;
+}
+
 a {
     color: $black;
     // text-decoration: none;
