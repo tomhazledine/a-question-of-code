@@ -3,8 +3,7 @@ layout: "episode.njk"
 title: "How do you apply to speak at a conference? (with Tony Edwards)"
 number: "46"
 date: "2020-01-20"
-featured: true
-tags: [episode, featured]
+tags: [episode]
 audio: "https://media.transistor.fm/73e04c6b.mp3"
 summary: "A peek behind the scenes of a tech conference, looking at how talks are selected and prepared."
 ---
