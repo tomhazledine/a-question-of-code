@@ -4,7 +4,6 @@ title: "How do you keep track of your knowledge?"
 number: "36"
 date: "2019-09-30"
 tags: ["episode", "featured"]
-featured: true
 audio: "https://media.transistor.fm/2be6d6f1.mp3"
 summary: "Good note taking is a crucial skill when learning to code"
 ---

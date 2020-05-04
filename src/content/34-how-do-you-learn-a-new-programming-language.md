@@ -4,7 +4,6 @@ title: "How do you learn a new programming language?"
 number: "34"
 date: "2019-09-15"
 tags: ["episode", "featured"]
-featured: true
 audio: "https://media.transistor.fm/88800c5c.mp3"
 summary: "What is the best strategy to adopt when you have to master a new language?"
 ---
