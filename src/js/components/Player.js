@@ -10,8 +10,8 @@ import Loading from "../icons/Loading";
 import Play from "../icons/Play";
 import Pause from "../icons/Pause";
 
-const Player = ({ url, title, artist, theme = "skeleton" }) => {
-    url = "https://audio.tomhazledine.com/files/lostThatEasy.mp3";
+const Player = ({ url, title, artist, theme = "aqoc-player" }) => {
+    // url = "https://audio.tomhazledine.com/files/lostThatEasy.mp3";
 
     const [audio, setAudio] = useState(() => new Audio(url));
 
