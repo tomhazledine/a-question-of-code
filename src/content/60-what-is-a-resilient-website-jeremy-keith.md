@@ -3,7 +3,7 @@ layout: "episode.njk"
 title: "What is a resilient website? (with Jeremy Keith)"
 number: "60"
 date: "2020-04-27"
-tags: ["episode"]
+tags: ["episode", "featured"]
 audio: "https://media.transistor.fm/eb621b37.mp3"
 summary: "How can we make the web work well for everybody?"
 ---
