@@ -3,7 +3,7 @@ layout: "episode.njk"
 title: "What is the difference between a framework and a library?"
 number: "44"
 date: "2020-01-06"
-tags: ["episode"]
+tags: ["episode", "featured"]
 audio: "https://media.transistor.fm/60cb0bdf.mp3"
 summary: "They're often confused and can appear very similar, so what are the differences between code frameworks and libraries?"
 ---

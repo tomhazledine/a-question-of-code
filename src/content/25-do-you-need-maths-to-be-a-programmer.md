@@ -3,7 +3,6 @@ layout: "episode.njk"
 title: "Do you need to be good at maths to become a programmer?"
 number: "25"
 date: "2019-06-24"
-featured: true
 tags: ["episode"]
 audio: "https://media.transistor.fm/5bc46f1d.mp3"
 summary: "Maths and coding often go hand-in-hand. But can you do one without the other?"
