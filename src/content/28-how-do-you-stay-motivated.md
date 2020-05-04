@@ -3,8 +3,7 @@ layout: "episode.njk"
 title: "How do you stay motivated?"
 number: "28"
 date: "2019-07-15"
-featured: true
-tags: [episode, featured]
+tags: [episode]
 audio: "https://media.transistor.fm/b1756664.mp3"
 summary: "Another look at time management and the usefulness of yearly themes."
 ---
