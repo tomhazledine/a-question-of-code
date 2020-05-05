@@ -6,13 +6,20 @@ import {
     currentTimeFromPercentage,
 } from "../helpers/audio";
 
-import Loading from "../icons/Loading";
-import Play from "../icons/Play";
-import Pause from "../icons/Pause";
+import PlayPause from "./PlayPause";
 
-const Player = ({ url, title, artist, theme = "aqoc-player" }) => {
-    // url = "https://audio.tomhazledine.com/files/lostThatEasy.mp3";
-
+const Player = ({
+    url,
+    title,
+    artist,
+    theme = "aqoc-player",
+    features = {},
+}) => {
+    const includedFeatures = {
+        volume: true,
+        mute: true,
+        ...features,
+    };
     const [audio, setAudio] = useState(() => new Audio(url));
 
     const [status, setStatus] = useState("pending"); // pending | loading | seeking | error | ready
@@ -194,16 +201,11 @@ const Player = ({ url, title, artist, theme = "aqoc-player" }) => {
     return (
         <div className={`${status} picobel__player ${theme}`}>
             <div className="loader"></div>
-            <button className="player-trigger" onClick={handlePlayPause}>
-                {status === "pending" || status === "loading" ? (
-                    <Loading className="play-trigger__icon" />
-                ) : playStatus === "playing" ? (
-                    <Pause className="play-trigger__icon" />
-                ) : (
-                    <Play className="play-trigger__icon" />
-                )}
-                <span className="player-trigger__button-text">play</span>
-            </button>
+            <PlayPause
+                handlePlayPause={handlePlayPause}
+                status={status}
+                playStatus={playStatus}
+            />
             <div className="meta__wrapper">
                 <span className="meta__title">{title}</span>
                 <span className="meta__artist">{artist}</span>
@@ -243,38 +245,54 @@ const Player = ({ url, title, artist, theme = "aqoc-player" }) => {
                     </React.Fragment>
                 )}
             </div>
-            <div className="volume__wrapper">
-                <button
-                    className={`volume__mute ${volume.muted ? "muted" : ""}`}
-                    onClick={handleMute}
-                >
-                    Mute
-                </button>
-                <div className="volume__label-wrapper">
-                    <span className="volume__label">Volume</span>
-                    <span className="volume__value">{volume.value}</span>
+            {includedFeatures.volume || includedFeatures.mute ? (
+                <div className="volume__wrapper">
+                    {includedFeatures.mute && (
+                        <button
+                            className={`volume__mute ${
+                                volume.muted ? "muted" : ""
+                            }`}
+                            onClick={handleMute}
+                        >
+                            Mute
+                        </button>
+                    )}
+                    {includedFeatures.volume && (
+                        <React.Fragment>
+                            <div className="volume__label-wrapper">
+                                <span className="volume__label">Volume</span>
+                                <span className="volume__value">
+                                    {volume.value}
+                                </span>
+                            </div>
+                            <div className="volume-slider__wrapper">
+                                <div className="pseudoVolumeBackground"></div>
+                                <div
+                                    className="volume-slider__progress-indicator"
+                                    style={{ width: `${volume.value}%` }}
+                                ></div>
+                                <div
+                                    className="volume-slider__playhead"
+                                    style={{ left: `${volume.value}%` }}
+                                ></div>
+                                <input
+                                    type="range"
+                                    min="0"
+                                    max="100"
+                                    step="1"
+                                    className="volume-slider__range"
+                                    value={
+                                        volume.muted
+                                            ? 0
+                                            : parseInt(volume.value, 10)
+                                    }
+                                    onChange={handleVolumeScrub}
+                                />
+                            </div>
+                        </React.Fragment>
+                    )}
                 </div>
-                <div className="volume-slider__wrapper">
-                    <div className="pseudoVolumeBackground"></div>
-                    <div
-                        className="volume-slider__progress-indicator"
-                        style={{ width: `${volume.value}%` }}
-                    ></div>
-                    <div
-                        className="volume-slider__playhead"
-                        style={{ left: `${volume.value}%` }}
-                    ></div>
-                    <input
-                        type="range"
-                        min="0"
-                        max="100"
-                        step="1"
-                        className="volume-slider__range"
-                        value={volume.muted ? 0 : parseInt(volume.value, 10)}
-                        onChange={handleVolumeScrub}
-                    />
-                </div>
-            </div>
+            ) : null}
         </div>
     );
 };

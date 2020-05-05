@@ -11,7 +11,12 @@ if (mountPoint) {
     const artist = mountPoint.getAttribute("data-artist");
 
     ReactDOM.render(
-        <Player url={audioPath} title={title} artist={artist} />,
+        <Player
+            url={audioPath}
+            title={title}
+            artist={artist}
+            features={{ volume: false, mute: false }}
+        />,
         mountPoint
     );
 }
