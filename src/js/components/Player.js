@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
 
-import {
-    formatTime,
-    calculateCurrentPercentage,
-    currentTimeFromPercentage,
-} from "../helpers/audio";
+import { formatTime } from "../helpers/audio";
 
+import Meta from "./Meta";
 import PlayPause from "./PlayPause";
+import Range from "./Range";
 
 const Player = ({
     url,
@@ -153,13 +151,7 @@ const Player = ({
         }
     };
 
-    const handleScrub = (e) => {
-        const updatedTime = currentTimeFromPercentage(
-            times.duration,
-            e.target.value
-        );
-        audio.currentTime = updatedTime;
-    };
+    const handleProgressUpdate = (newTime) => (audio.currentTime = newTime);
 
     const handleVolumeScrub = (e) => {
         setVolume({
@@ -193,11 +185,6 @@ const Player = ({
         }
     }, [volume]);
 
-    const percentDone = calculateCurrentPercentage(
-        times.current,
-        times.duration
-    );
-
     return (
         <div className={`${status} picobel__player ${theme}`}>
             <div className="loader"></div>
@@ -206,10 +193,7 @@ const Player = ({
                 status={status}
                 playStatus={playStatus}
             />
-            <div className="meta__wrapper">
-                <span className="meta__title">{title}</span>
-                <span className="meta__artist">{artist}</span>
-            </div>
+            <Meta title={title} artist={artist} />
             <div className="timings__wrapper">
                 {status === "pending" && (
                     <span className="timings__status">Pending</span>
@@ -219,26 +203,12 @@ const Player = ({
                         <span className="timings__timer">
                             {formatTime(times.current)}
                         </span>
-                        <div className="progress-slider__wrapper">
-                            <div className="progress-slider__background"></div>
-                            <div
-                                className="progress-slider__indicator"
-                                style={{ width: `${percentDone}%` }}
-                                // style={{ width: `20%` }}
-                            ></div>
-                            <div
-                                className="progress-slider__playhead"
-                                style={{ left: `${percentDone}%` }}
-                            ></div>
-                            <input
-                                type="range"
-                                min="0"
-                                max="100"
-                                className="progress-slider__range"
-                                value={percentDone}
-                                onChange={handleScrub}
-                            />
-                        </div>
+                        <Range
+                            className={"progress-slider"}
+                            max={times.duration}
+                            current={times.current}
+                            update={handleProgressUpdate}
+                        />
                         <span className="timings__duration">
                             {formatTime(times.duration)}
                         </span>
