@@ -31,14 +31,14 @@
 // // shadow background of the
 // // loading indicator.
 // // ---------------------------
-// @keyframes basic_slide {
-//     0% {
-//         transform: translateX(-2em);
-//     }
-//     100% {
-//         transform: translateX(0);
-//     }
-// }
+@keyframes background_slide {
+    0% {
+        transform: translateX(-1em);
+    }
+    100% {
+        transform: translateX(0em);
+    }
+}
 
 // -------------
 // PLAYER STYLES
@@ -190,6 +190,12 @@
         }
     }
 
+    .timings__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
     //     // Display info about time-played and song-duration
     //     .timings__wrapper {
     //         position: absolute;
@@ -226,6 +232,36 @@
     //     &.loading .timings__duration {
     //         display: none;
     //     }
+
+    .timings__status {
+        height: 1.4em;
+        font-size: 1em;
+        line-height: 1;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        border: 0.2rem solid $black;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: calc(100% + 2em);
+            height: 100%;
+            background-image: repeating-linear-gradient(
+                to right,
+                $cream 0%,
+                $cream 50%,
+                $grey 50%,
+                $grey 100%
+            );
+            background-size: 1em 1em;
+            background-position-x: 0em;
+            background-position-y: 0em;
+            animation: background_slide 0.4s linear infinite;
+        }
+    }
 
     // The "fake" range slider
     .progress-slider__wrapper {

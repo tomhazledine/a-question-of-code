@@ -78,8 +78,7 @@ const Player = ({
     // const handleComplete = (e) => {
     //     console.log("handleComplete", e);
     // };
-    const handleDurationchange = (e) => {
-        console.log("handleDurationchange", e);
+    const handleDurationchange = () => {
         setTimes((times) => ({ ...times, duration: audio.duration }));
     };
     // const handleEmptied = (e) => {
@@ -195,24 +194,21 @@ const Player = ({
             />
             <Meta title={title} artist={artist} />
             <div className="timings__wrapper">
-                {status === "pending" && (
+                <span className="timings__timer">
+                    {formatTime(times.current)}
+                </span>
+                <span className="timings__duration">
+                    {formatTime(times.duration)}
+                </span>
+                {status === "pending" ? (
                     <span className="timings__status">Pending</span>
-                )}
-                {status !== "pending" && (
-                    <React.Fragment>
-                        <span className="timings__timer">
-                            {formatTime(times.current)}
-                        </span>
-                        <Range
-                            className={"progress-slider"}
-                            max={times.duration}
-                            current={times.current}
-                            update={handleProgressUpdate}
-                        />
-                        <span className="timings__duration">
-                            {formatTime(times.duration)}
-                        </span>
-                    </React.Fragment>
+                ) : (
+                    <Range
+                        className={"progress-slider"}
+                        max={times.duration}
+                        current={times.current}
+                        update={handleProgressUpdate}
+                    />
                 )}
             </div>
             {includedFeatures.volume || includedFeatures.mute ? (
