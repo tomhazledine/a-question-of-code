@@ -16,6 +16,7 @@ const Player = ({
     const includedFeatures = {
         volume: true,
         mute: true,
+        title: true,
         ...features,
     };
     const [audio, setAudio] = useState(() => new Audio(url));
@@ -186,30 +187,33 @@ const Player = ({
 
     return (
         <div className={`${status} picobel__player ${theme}`}>
-            <div className="loader"></div>
             <PlayPause
                 handlePlayPause={handlePlayPause}
                 status={status}
                 playStatus={playStatus}
             />
-            <Meta title={title} artist={artist} />
-            <div className="timings__wrapper">
-                <span className="timings__timer">
-                    {formatTime(times.current)}
-                </span>
-                <span className="timings__duration">
-                    {formatTime(times.duration)}
-                </span>
-                {status === "pending" ? (
-                    <span className="timings__status">Pending</span>
-                ) : (
-                    <Range
-                        className={"progress-slider"}
-                        max={times.duration}
-                        current={times.current}
-                        update={handleProgressUpdate}
-                    />
+            <div className="player__body">
+                {includedFeatures.title && (
+                    <Meta title={title} artist={artist} />
                 )}
+                <div className="timings__wrapper">
+                    <span className="timings__timer">
+                        {formatTime(times.current)}
+                    </span>
+                    <span className="timings__duration">
+                        {formatTime(times.duration)}
+                    </span>
+                    {status === "pending" ? (
+                        <span className="timings__status">Pending</span>
+                    ) : (
+                        <Range
+                            className={"progress-slider"}
+                            max={times.duration}
+                            current={times.current}
+                            update={handleProgressUpdate}
+                        />
+                    )}
+                </div>
             </div>
             {includedFeatures.volume || includedFeatures.mute ? (
                 <div className="volume__wrapper">
