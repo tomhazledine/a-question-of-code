@@ -6,7 +6,6 @@ date: "2020-04-06"
 tags: ["episode"]
 audio: "https://media.transistor.fm/9ddc908d.mp3"
 summary: "At some point, every developer needs to deal with time in their code. Here are some reasons coding with times and dates should fill you with dread."
-featured: true
 ---
 
 This week's episode is another deep-dive into a niche coding topic. This time, we're dealing with time. In short, writing code that deals with times and dates is horrible. We're here to tell you that, as a sensible developer, you should avoid it at all costs.
