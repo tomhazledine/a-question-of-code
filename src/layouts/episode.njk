@@ -27,15 +27,15 @@ scripts: ['player']
             </div>
         </span>
     </div>
-        
-    {{ content | safe }}
-
-    <div id="player__wrapper" data-audio="{{audio}}" data-title="{{title}}" data-artist="{{global.siteTitle}}, episode #{{number}}">
+    
+    <div id="player__wrapper" data-audio="{{audio}}" data-title="{{title}}" data-artist="{{global.siteTitle}}, episode #{{number}}" data-features='{"title": false}'>
         <audio preload="none" class="post__player" controls src={{audio}}>
             Your browser does not support the
             <code>audio</code> element.
         </audio>
     </div>
+        
+    {{ content | safe }}
     
     <h2>Get in touch</h2>
     {% include "headshots.njk" %}
