@@ -22,7 +22,7 @@ module.exports = (env, argv) => ({
             new UglifyJsPlugin({
                 cache: true,
                 parallel: true,
-                sourceMap: true, // set to true if you want JS source maps
+                sourceMap: true,
             }),
             new OptimizeCSSAssetsPlugin({}),
         ],
