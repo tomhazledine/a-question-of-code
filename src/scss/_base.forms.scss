@@ -1,0 +1,40 @@
+.form {
+    margin: 6rem 0;
+}
+
+.form__input {
+    font-family: inherit;
+    background: $white;
+    border: 0.2rem solid $black;
+    font-size: inherit;
+    padding: 1rem;
+    &:focus {
+        outline: none;
+        box-shadow: $orange 0 0 0 0.2rem;
+    }
+}
+
+.button {
+    @extend %buttonReset;
+    background: $orange;
+    color: $black;
+    border: 0.2rem solid $black;
+    padding: 1rem 3rem;
+    font-weight: bold;
+    &:hover {
+        background: $black;
+        color: $orange;
+    }
+    &:focus {
+        outline: none;
+        box-shadow: $orange 0 0 0 0.2rem;
+    }
+}
+
+.form__block {
+    display: flex;
+    justify-content: center;
+    > * + * {
+        margin-left: 1rem;
+    }
+}
