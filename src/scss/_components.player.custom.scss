@@ -1,9 +1,17 @@
+.player__wrapper {
+    margin: 6rem 0;
+}
+
+.player__wrapper--episode {
+    margin-top: 0;
+}
+
 .aqoc-player.picobel__player {
     position: relative;
     display: flex;
     justify-content: stretch;
     align-items: center;
-    margin: 6rem 0;
+    // margin: 6rem 0;
 
     .player-trigger {
         flex-shrink: 0;
