@@ -1,10 +1,10 @@
 ---
 layout: "episode.njk"
-title: "What is it like to have a mentor? (ft. Amber Wilson)"
+title: "What is it like to have a mentor? (with Amber Wilson)"
 number: "62"
 date: "2020-05-11"
 tags: ["episode"]
-audio: "https://media.transistor.fm/.mp3"
+audio: "https://media.transistor.fm/7be1a472.mp3"
 summary: "A fascinating first-hand account of tech mentorship"
 ---
 
