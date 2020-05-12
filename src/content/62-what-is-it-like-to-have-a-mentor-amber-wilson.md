@@ -17,4 +17,4 @@ We've spoken about the power of mentoring a lot on this show, and this episode i
 * [amberwilson.co.uk](https://amberwilson.co.uk/blog)
 * [Amber on Twitter](https://twitter.com/ambrwlsn90)
 * [Amber on Linkedin](https://www.linkedin.com/in/ambrwlsn90/)
-* [Code Bar](https://codebar.io)
+* [codebar](https://codebar.io)
