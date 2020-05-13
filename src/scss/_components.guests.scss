@@ -1,0 +1,29 @@
+.guests {
+    display: flex;
+}
+
+.headshot-guest {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.guest-info {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 3em;
+}
+
+.guest-info__title {
+    margin-bottom: 0.5em;
+}
+
+.headshot__guest {
+    width: 12em;
+    height: 12em;
+    border: 0.2rem solid $black;
+    box-shadow: inset $cream 0 0 0 0.4rem, inset $black 0 0 0 0.6rem;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
