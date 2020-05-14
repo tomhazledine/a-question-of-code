@@ -1,0 +1,44 @@
+.guest {
+    display: flex;
+    align-items: center;
+    @include bp(d2){
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.guest__info {
+    margin: 3em;
+    @include bp(d2){
+        margin: 0.5em;
+        margin-bottom: 1em;
+    }
+}
+
+.guest__title {
+    margin-bottom: 0.5em;
+    font-size: 30px;
+    @include bp(d2){
+        text-align: center;
+    }
+}
+
+.guest__headshot-layout {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    @include bp(d2){
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+    }
+}
+
+.guest__headshot {
+    width: 12em;
+    height: 12em;
+    border: 0.2rem solid $black;
+    box-shadow: inset $cream 0 0 0 0.4rem, inset $black 0 0 0 0.6rem;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
