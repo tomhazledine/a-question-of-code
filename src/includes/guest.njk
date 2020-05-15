@@ -1,0 +1,11 @@
+<div class="guest">
+    {% if guest.headshot %}
+    <div class="guest__headshot-layout">
+        <div class="guest__headshot" style="background-image: url({{guest.headshot}})" ></div>
+    </div>
+    {% endif %}
+    <div class="guest__info">
+        <h1 class="guest__title">{{guest.name}}</h1>
+        <p>{{guest.bio}}</p>
+    </div>
+</div>

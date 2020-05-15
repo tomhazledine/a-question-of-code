@@ -36,9 +36,12 @@ scripts: ['player']
     </div>
         
     {{ content | safe }}
+
+    {% if guest %}
+        {% include "guest.njk" %}
+    {% endif %}
     
     <h2>Get in touch</h2>
     {% include "headshots.njk" %}
 
 </div>
-    
