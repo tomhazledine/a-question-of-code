@@ -2,6 +2,11 @@
 layout: "episode.njk"
 title: "What is i18n? (with Eli Schutze)"
 number: "63"
+guest: {
+    "name": "Eli Schutze",
+    "headshot": "/images/guests/eli-63.jpg",
+    "bio": "Originally from Nicaragua, Eli is a London-based web engineer and speaker currently making money work for everyone at Monzo Bank"
+}
 date: "2020-05-18"
 tags: ["episode"]
 audio: "https://media.transistor.fm/bcc146e1.mp3"
