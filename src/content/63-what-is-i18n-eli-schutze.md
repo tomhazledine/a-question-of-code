@@ -4,7 +4,7 @@ title: "What is i18n? (with Eli Schutze)"
 number: "63"
 guest: {
     "name": "Eli Schutze",
-    "headshot": "/images/guests/eli-63.jpg",
+    "headshot": "/images/guests/63-eli.jpg",
     "bio": "Originally from Nicaragua, Eli is a London-based web engineer and speaker currently making money work for everyone at Monzo Bank"
 }
 date: "2020-05-18"
