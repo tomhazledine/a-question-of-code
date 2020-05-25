@@ -9,7 +9,7 @@ guest: {
     "headshot": "/images/guests/boris-64.jpg",
     "bio": "Boris Paskhaver is a software developer, Agile consultant, online educator and author based in New York City"
 }
-audio: "https://media.transistor.fm/.mp3"
+audio: "https://media.transistor.fm/38eeb145.mp3"
 summary: "Pandas is a library for dealing with data in Python. It also makes for a great introduction to coding in general"
 ---
 
