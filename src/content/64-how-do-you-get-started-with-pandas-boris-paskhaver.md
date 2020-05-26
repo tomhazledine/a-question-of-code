@@ -6,7 +6,7 @@ date: "2020-05-25"
 tags: ["episode"]
 guest: {
     "name": "Boris Paskhaver",
-    "headshot": "/images/guests/boris-64.jpg",
+    "headshot": "/images/guests/64-boris.jpg",
     "bio": "Boris Paskhaver is a software developer, Agile consultant, online educator and author based in New York City"
 }
 audio: "https://media.transistor.fm/38eeb145.mp3"
