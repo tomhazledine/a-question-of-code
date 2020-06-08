@@ -6,6 +6,7 @@ date: "2020-06-08"
 tags: ["episode"]
 guest: {
     "name": "Tom Sainsbury",
+    "headshot": "/images/guests/66-tom.jpg",
     "bio": "Tom has just finished a PHD in neuroscience at King's College London. He's interested in transitioning to data science but is staying in academia for the foreseeable future."
 }
 audio: "https://media.transistor.fm/43d278b6.mp3"
