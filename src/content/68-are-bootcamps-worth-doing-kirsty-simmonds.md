@@ -22,3 +22,4 @@ As well as giving us an honest and fair insight into the mechanics and specifics
 * Kirsty on Twitter [@torahwilcox](https://twitter.com/torahwilcox)
 * Kirsty's excellent blog post about [job searching](https://www.thefragehaver.com/posts/jobsearch/)
 * [Episode #45: Should you take a bootcamp?](https://aquestionofcode.com/45-should-you-take-a-bootcamp/)
+* [Episode # 61: What questions should you ask in an interview?](https://aquestionofcode.com/61-what-questions-should-you-ask-in-an-interview/)
