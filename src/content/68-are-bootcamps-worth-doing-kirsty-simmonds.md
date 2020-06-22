@@ -9,7 +9,7 @@ guest: {
     "headshot": "/images/guests/68-kirsty.jpg",
     "bio": "Kirsty is a Developer at Super Being Labs in London, an agency that builds products primarily for the charity sector."
 }
-audio: "https://media.transistor.fm/.mp3"
+audio: "https://media.transistor.fm/d6b18a40.mp3"
 summary: "A detailed look at the process of taking a coding bootcamp from someone who has actually done it."
 ---
 
