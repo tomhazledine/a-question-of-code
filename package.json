@@ -30,12 +30,13 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "d3": "^5.9.7",
         "@11ty/eleventy": "^0.8.3",
-        "prismjs": "^1.16.0",
+        "d3": "^5.9.7",
         "markdown-it-anchor": "^5.2.5",
+        "markdown-it-attrs": "^3.0.3",
         "markdown-it-footnote": "^3.0.1",
         "moment": "^2.24.0",
+        "prismjs": "^1.16.0",
         "react": "^16.8.6",
         "react-dom": "^16.8.6"
     },

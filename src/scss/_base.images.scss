@@ -1,0 +1,8 @@
+.post__content img.figure--left {
+    float: left;
+    max-width: 60%;
+    margin-right: 1em;
+    @include bp(d2) {
+        max-width: 100%;
+    }
+}

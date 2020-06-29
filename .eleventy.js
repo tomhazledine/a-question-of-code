@@ -1,11 +1,12 @@
 const moment = require("moment");
+const markdownItAttrs = require("markdown-it-attrs");
 
-module.exports = eleventyConfig => {
-    eleventyConfig.addNunjucksFilter("date", date =>
+module.exports = (eleventyConfig) => {
+    eleventyConfig.addNunjucksFilter("date", (date) =>
         moment(date, "YYYY-MM-DD").format("Do MMM, Y")
     );
 
-    eleventyConfig.addNunjucksFilter("datefull", date =>
+    eleventyConfig.addNunjucksFilter("datefull", (date) =>
         moment(date, "YYYY-MM-DD").format("YYYY-MM-DDTHH:mm[:00Z]")
     );
 
@@ -13,10 +14,11 @@ module.exports = eleventyConfig => {
     let markdownItEmoji = require("markdown-it-footnote");
     let markdownItAnchor = require("markdown-it-anchor");
     let options = {
-        html: true
+        html: true,
     };
     let markdownLib = markdownIt(options)
         .use(markdownItEmoji)
+        .use(markdownItAttrs)
         .use(markdownItAnchor);
 
     eleventyConfig.setLibrary("md", markdownLib);
@@ -28,7 +30,7 @@ module.exports = eleventyConfig => {
             output: "build",
             includes: "../includes/",
             layouts: "../layouts/",
-            data: "../data/"
-        }
+            data: "../data/",
+        },
     };
 };
