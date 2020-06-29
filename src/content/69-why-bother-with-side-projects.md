@@ -4,7 +4,7 @@ title: "Why bother with side projects?"
 number: "69"
 date: "2020-06-29"
 tags: ["episode"]
-audio: "http://media.transistor.fm/441f1fc4.mp3"
+audio: "https://media.transistor.fm/441f1fc4.mp3"
 summary: "Developers are always banging on about side projects, but are they really worth having?"
 ---
 
