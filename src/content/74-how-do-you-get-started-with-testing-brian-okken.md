@@ -7,7 +7,7 @@ tags: ["episode"]
 guest: {
     "name": "Brian Okken",
     "headshot": "/images/guests/74-brian.jpg",
-    "bio": "Brian Okken is a husband to a truly amazing woman, a proud father of two incredible daughters, the author of "Python Testing with pytest", the host of Python Bytes and Test & Code podcasts, a public speaker, a corporate trainer, a lead software engineer, an antique dealer, and a fanatic about getting more software developers to start loving software testing."
+    "bio": "Brian Okken is a husband to a truly amazing woman, a proud father of two incredible daughters, the author of 'Python Testing with pytest', the host of Python Bytes and Test & Code podcasts, a public speaker, a corporate trainer, a lead software engineer, an antique dealer, and a fanatic about getting more software developers to start loving software testing."
 }
 audio: "https://media.transistor.fm/fd0ad8a3.mp3"
 summary: "We finally get a testing expert onto the show to set us straight about some of our testing misconceptions."
