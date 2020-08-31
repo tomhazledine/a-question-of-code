@@ -4,7 +4,7 @@ title: "How can developers get better at design?"
 number: "78"
 date: "2020-08-31"
 tags: ["episode"]
-audio: "https://media.transistor.fm/.mp3"
+audio: "https://media.transistor.fm/aebc02ee.mp3"
 summary: "Devs should know a bit about design. You don't need to make it beautiful - focus on making it not ugly."
 ---
 
