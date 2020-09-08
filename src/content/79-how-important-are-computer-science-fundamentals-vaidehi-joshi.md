@@ -6,7 +6,7 @@ date: "2020-09-07"
 tags: ["episode"]
 guest: {
     "name": "Vaidehi Joshi",
-    "headshot": "/images/guests/75-vaidehi.jpg",
+    "headshot": "/images/guests/79-vaidehi.jpg",
     "bio": "Vaidehi Joshi is a senior engineer at Forem, where she builds community and helps improve the software careers of millions. She enjoys building and breaking code, but loves creating empathetic engineering teams a whole lot more. She is the creator of basecs and baseds, two writing series exploring the fundamentals of computer science and distributed systems. She also co-hosts the Base.cs Podcast, and is a producer of the BaseCS and Byte Sized video series."
 }
 audio: "https://media.transistor.fm/eab9645a.mp3"
