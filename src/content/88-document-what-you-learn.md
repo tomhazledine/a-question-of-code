@@ -1,7 +1,7 @@
 ---
 layout: "episode.njk"
 title: "Top Tips review: document what you learn"
-number: "87"
+number: "88"
 date: "2020-11-09"
 tags: ["episode"]
 audio: "https://media.transistor.fm/9fa4b8f8.mp3"
