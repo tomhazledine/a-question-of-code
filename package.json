@@ -60,7 +60,7 @@
         "jest": "^24.7.1",
         "jest-fetch-mock": "^2.1.2",
         "mini-css-extract-plugin": "^0.5.0",
-        "node-sass": "^4.11.0",
+        "node-sass": "^7.0.0",
         "optimize-css-assets-webpack-plugin": "^5.0.1",
         "path": "^0.12.7",
         "postcss-loader": "^3.0.0",
