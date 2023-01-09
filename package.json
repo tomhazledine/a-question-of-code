@@ -30,7 +30,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@11ty/eleventy": "^0.8.3",
+        "@11ty/eleventy": "^1.0.2",
         "d3": "^5.9.7",
         "markdown-it-anchor": "^5.2.5",
         "markdown-it-attrs": "^3.0.3",
